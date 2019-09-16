@@ -1,0 +1,399 @@
+body {
+  margin: 0;
+  font-size: 28px;
+  font-family: 'Titillium Web', sans-serif;
+	transition: 0.2s all;
+}
+
+#gray {
+	background-color: #393e46;
+	width: 100%;
+}
+
+#formFrame {
+	position: absolute;
+	background: #393e46;
+	height: 1010px;
+	width:600px;
+	left: 50%;
+	top: 100%;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	-moz-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+}
+
+#promoParaDiv {
+	color: white;
+	background-color: #393e46;
+	padding: 100px 300px;
+	text-align: center;
+}
+
+#navbar {
+  background-color: #222831;
+	opacity: 0.9;
+	z-index: 1;
+}
+
+.fakehr {
+	position: absolute;
+	left: 50%;
+	top: 83%;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	-moz-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+	background: white;
+	height: 3px;
+	width: 90%;
+}
+
+#register2 {
+	background-color: #393e46;
+	color: white;
+	height: 300px;
+}
+
+#waiting {
+	position: relative;
+	text-align:center;
+	top: 2em;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	-moz-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+}
+
+#sponsorsjudgesteam {
+	background-image: url("images/4k-matrix-style-binary-codeseamless-footage-088649879_prevstill.jpeg");
+	background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+	height: 600px;
+}
+
+#registerInfo { 
+	position: absolute;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	-moz-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+	top: 50%;
+	color: white;
+	left: 50%;
+	background: #00adb5;
+	border-radius: 10px;
+	padding: 15px 25px;
+}
+
+#registerbg {
+	background-image: url("images/parallax3.jpg");
+	background-attachment: fixed;
+  background-position: center;
+	background-repeat: no-repeat;
+  background-size: cover;
+	height: 800px;
+	/* height: 1200px; when we open registration */ 
+}
+
+#leftBar {
+	position: fixed;
+	left: 0px;
+	z-index:100;
+	width: 7px;
+	height:100%;
+	background-color: #393e46;
+}
+
+#register, #contact {
+	float: right;
+	opacity: 1;
+}
+
+hr {
+	border: none;
+	height: 1px;
+	z-index: 99;
+	color: #00f;
+}
+
+#hftw {
+	width: 300px;
+	height: 55px;
+	margin: 0 0 0 10%;
+}
+
+#hftw:hover img {
+	background-color: #00adb5 !important;
+}
+
+#hftw:hover a {
+	background-color: #00adb5 !important;
+}
+
+#darkLogo {
+	background-color: #36393e;
+	opacity: 1 !important;
+	margin: 0 0 0 -8px;
+	padding: 2.5px 2.5px;
+	transition: 0.2s all;
+}
+
+#navbarlogo {
+	background-color: #36393e;
+	opacity: 1 !important;
+	color: white !important;
+	width: auto;
+	float: left;
+	margin: 0 0 0 10%;
+	font-family: 'Chakra Petch', sans-serif;
+	font-weight: 700;
+	transition: 0.2s all;
+	z-index: 1000;
+}
+
+#imageHREF {
+	text-align: left !important;
+	padding: 0 !important;
+}
+
+#navbar a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 21px;
+	transition: 0.2s all;
+}
+
+#navbar a:hover {
+  background-color: #393e46;
+  color: white;
+}
+
+#navbar a.active {
+  background-color: #393e46;
+  color: white;
+}
+
+#registerButton {
+	background: #00adb5;
+	position: absolute;
+	left: 50%;
+	top: 70%;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	-moz-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+	text-decoration: none;
+	padding: 15px 25px;
+	font-size: 30px;
+	border-radius: 10px;
+	transition: 0.2s all;
+	color: white;
+	font-family: 'Chakra Petch', sans-serif;
+}
+
+#registerButton:hover {
+	font-size: 35px;
+}
+
+#registerButton2 { 
+  /* need to fix this so that the button expands outward instead of expanding down, just like registerButton1. */
+	background: #00adb5;
+	position: relative;
+	top: 3.5em;
+	text-decoration: none;
+	padding: 15px 25px;
+	font-size: 30px;
+	border-radius: 10px;
+	transition: 0.2s all;
+	color: white;
+	font-family: 'Chakra Petch', sans-serif;
+}
+
+#registerButton2:hover {
+	font-size: 35px;
+}
+
+
+#logoDiv {
+  padding: 16px;
+	background-image: url("images/parallax1.jpg");
+	background-attachment: fixed;
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+	height: 600px;
+	position: relative;
+	color: white;
+}
+
+#logo {
+	font-size: 90px;
+	font-family: 'Chakra Petch', sans-serif;
+	animation: glow 2s ease-in-out infinite alternate;
+	font-weight:700;
+	margin: 0;
+  position: absolute;
+	left: 50%;
+	top: 30%;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	-moz-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+}
+
+#registertext {
+	font-size: 90px;
+	font-family: 'Chakra Petch', sans-serif;
+	font-weight:700;
+	margin: 0;
+  position: absolute;
+	left: 50%;
+	top: 30%;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	-moz-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+}
+
+#logoCaption {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	-moz-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+}
+
+#registertextcaption {
+	position: absolute;
+	left: 50%;
+	top: 44%;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	-moz-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+}
+
+#faq {
+	background: #00adb5;
+	padding: 3px 20px;
+	color: white;
+	border-radius: 10px;
+  font-size: 56px;
+	font-family: 'Chakra Petch', sans-serif;
+  font-weight:700;
+	position: relative;
+	top: 0.2em;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + #logoDiv{
+  padding-top: 60px;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #670ec3;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #00adb5, 0 0 40px #00adb5, 0 0 50px #00adb5, 0 0 60px #00adb5, 0 0 70px #00adb5, 0 0 80px #00adb5;
+  }
+}
+
+#faqDiv {
+	background-image: url("images/parallax2.jpg");
+	background-attachment: fixed;
+  background-position: center;
+  background-repeat: repeat;
+
+}
+
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+#item2text {
+	top: 35%;
+	position: relative;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+.item3 { grid-area: main; }
+#item3text {
+	top: 30%;
+	position: relative;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+.item4 { grid-area: right; }
+#item4text {
+	top: 30%;
+	position: relative;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+.item5 { grid-area: footer; }
+.item6 { grid-area: legger; }
+.item7 { grid-area: armer; }
+#item7text {
+	top: 35%;
+	position: relative;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+.item8 { grid-area: finger; }
+#item8text {
+	top: 30%;
+	position: relative;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+.item9 { grid-area: toer; }
+
+.grid-container {
+  display: grid;
+  grid-template:
+    'header header header header header header'
+    'menu main main main right right'
+    'footer footer footer footer footer footer'
+		'legger legger legger legger legger armer'
+		'finger finger finger toer toer armer';
+  grid-gap: 25px;
+  padding: 20px;
+	margin: 0 0 0 7px;
+}
+.grid-container > div {
+	color: black;
+  background-color: #eeeeee;
+	opacity: 0.9;
+  text-align: center;
+  padding: 20px 15px;
+  font-size: 18px;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	z-index:-100;
+  background: #393e46;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #00adb5;
+	opacity: 0.8;
+	border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #eeeeee; 
+}
