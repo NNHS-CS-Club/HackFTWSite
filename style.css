@@ -5,6 +5,13 @@ body {
 	transition: 0.2s all;
 }
 
+#hereLink {
+	border-radius: 10px;
+	background: #00adb5;
+	padding: 0 4px;
+	color: white;
+}
+
 #gray {
 	background-color: #393e46;
 	width: 100%;
