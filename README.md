@@ -1,2 +1,2 @@
 # HackFTWSite
-The official website for Hack For the Win
+The official website for Hack For the World
