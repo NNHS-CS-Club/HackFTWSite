@@ -78,7 +78,7 @@ body {
 	height: 600px;
 }
 
-#registerInfo { 
+#registerInfo {
 	position: absolute;
 	-webkit-transform: translateX(-50%) translateY(-50%);
 	-moz-transform: translateX(-50%) translateY(-50%);
@@ -97,8 +97,8 @@ body {
   background-position: center;
 	background-repeat: no-repeat;
   background-size: cover;
-	height: 800px;
-	/* height: 1200px; when we open registration */ 
+	height: 100vh;
+	/* height: 1200px; when we open registration */
 }
 
 #leftBar {
@@ -203,7 +203,7 @@ hr {
 	font-size: 35px;
 }
 
-#registerButton2 { 
+#registerButton2 {
   /* need to fix this so that the button expands outward instead of expanding down, just like registerButton1. */
 	background: #00adb5;
 	position: relative;
@@ -392,7 +392,7 @@ hr {
 	z-index:-100;
   background: #393e46;
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: #00adb5;
@@ -402,5 +402,5 @@ hr {
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #eeeeee; 
+  background: #eeeeee;
 }
