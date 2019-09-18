@@ -1,3 +1,4 @@
+
 body {
   margin: 0;
   font-size: 28px;
@@ -403,4 +404,21 @@ hr {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #eeeeee;
+}
+
+@media only screen and (orientation : landscape) {
+    #logo {
+        font-size: 80px;
+    }
+    #logoCaption {
+        width: 400px;
+    }
+    #registerbutton {
+        width: 220px;
+        text-align: center;
+    }
+    #promoParaDiv {
+        font-size: 17px;
+        padding: 50px 30px;
+    }
 }
