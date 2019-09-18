@@ -406,7 +406,7 @@ hr {
   background: #eeeeee;
 }
 
-@media only screen and (orientation : landscape) {
+@media only screen and (orientation : portrait) {
     #logo {
         font-size: 80px;
     }
