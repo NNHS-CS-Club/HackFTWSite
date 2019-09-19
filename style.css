@@ -491,7 +491,7 @@ hr {
         margin: 0 0 0 2% !important;
     }
     #navbarlogo1 {
-        display: none;
+        display: none !important;
     }
     #navbarlogo2 {
         display: block;
