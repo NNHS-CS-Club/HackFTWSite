@@ -428,6 +428,8 @@ hr {
     }
     #logo {
         font-size: 75px;
+        animation: none;
+        text-shadow: 0 0 20px #fff, 0 0 30px #00adb5, 0 0 40px #00adb5, 0 0 50px #00adb5, 0 0 60px #00adb5, 0 0 70px #00adb5, 0 0 80px #00adb5;
     }
     #logoCaption {
         width: 400px;
