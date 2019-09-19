@@ -11,6 +11,7 @@ body {
 	background: #00adb5;
 	padding: 0 4px;
 	color: white;
+	cursor: pointer;
 }
 
 #gray {
@@ -460,10 +461,10 @@ hr {
         padding: 10px;
     }
     #item3text {
-        top: 42%;
+        top: 35%;
     }
     #item8text {
-        top: 40%;
+        top: 30%;
     }
     #item9text {
         top: 30%;
@@ -480,11 +481,14 @@ hr {
         transform: translateY(-50%);
     }
     #item4text {
-        top: 40%;
+        top: 30%;
     }
     #item1text {
         top: 35%;
-    }
+	}
+	#item2text {
+		top: 25%;
+	}
     #navbar a {
         padding: 10px 12px;
         font-size: 18px;
