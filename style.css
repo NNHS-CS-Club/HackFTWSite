@@ -427,10 +427,11 @@ hr {
         display: none;
     }
     #logo {
-        font-size: 80px;
+        font-size: 75px;
     }
     #logoCaption {
         width: 400px;
+        font-size: 23px;
     }
     #registerButton {
         width: 220px;
