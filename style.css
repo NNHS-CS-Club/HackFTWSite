@@ -413,7 +413,7 @@ hr {
     #logoCaption {
         width: 400px;
     }
-    #registerbutton {
+    #registerButton {
         width: 220px;
         text-align: center;
     }
@@ -421,4 +421,17 @@ hr {
         font-size: 17px;
         padding: 50px 30px;
     }
+    .grid-container {
+        grid-template:
+        'menu right'
+        'footer footer'
+        'legger armer'
+        'finger header'
+        'main toer';
+        grid-gap: 15px;
+    }
+    .grid-container > div {
+        padding: 10px;
+    }
+
 }
