@@ -474,9 +474,9 @@ hr {
         padding: 2.2px;
     }
     #htfw {
-        margin: 0 0 0 2%;
+        margin: 0 0 0 2% !important;
     }
     #navbar {
-        margin: 0 0 0 2%;
+        margin: 0 0 0 2% !important;
     }
 }
