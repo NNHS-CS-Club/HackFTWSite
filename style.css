@@ -413,7 +413,7 @@ hr {
     #logoCaption {
         width: 400px;
     }
-    #registerbutton {
+    #registerButton {
         width: 220px;
         text-align: center;
     }
@@ -421,4 +421,41 @@ hr {
         font-size: 17px;
         padding: 50px 30px;
     }
+    .grid-container {
+        grid-template:
+        'menu right'
+        'footer footer'
+        'legger armer'
+        'finger header'
+        'main toer';
+        grid-gap: 15px;
+    }
+    .grid-container > div {
+        padding: 10px;
+    }
+    #item3text {
+        top: 43%;
+
+    }
+    #item8text {
+        top: 40%;
+    }
+    #item9text {
+        top: 30%;
+        position: relative;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+    #item1text {
+        top: 30%;
+        position: relative;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+    #item4text {
+        top: 40%
+    }
+
 }
