@@ -430,6 +430,9 @@ hr {
 	#item3text {
 		top: 37%;
 	}
+	#leftBar {
+        display: none;
+    }
 }
 
 @media only screen and (orientation : portrait) {
