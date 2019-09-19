@@ -390,7 +390,7 @@ hr {
 		'finger finger finger toer toer armer';
   grid-gap: 25px;
   padding: 20px;
-	margin: 0 0 0 7px;
+  margin: 0 0 0 7px;
 }
 .grid-container > div {
 	color: black;
@@ -432,7 +432,10 @@ hr {
 	}
 	#leftBar {
         display: none;
-    }
+	}
+	.grid-container {
+		margin: 0;
+	}
 }
 
 @media only screen and (orientation : portrait) {
@@ -474,7 +477,8 @@ hr {
         'header header'
         'main main'
         'toer toer';
-        grid-gap: 15px;
+		grid-gap: 15px;
+		margin: 0;
     }
     .grid-container > div {
         padding: 10px;
