@@ -423,7 +423,7 @@ hr {
   background: #eeeeee;
 }
 
-@media only screen and (orientation: landscape) and (max-device-width: 480px) {
+@media only screen and (orientation: landscape) and (max-width: 480px) {
 	#promoParaDiv {
 		padding: 100px 60px;
 	}
