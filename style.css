@@ -445,11 +445,15 @@ hr {
     }
     .grid-container {
         grid-template:
-        'menu right'
+        'menu menu'
+        'right right'
         'footer footer'
-        'legger armer'
-        'finger header'
-        'main toer';
+        'legger legger'
+        'armer armer'
+        'finger finger'
+        'header header'
+        'main main'
+        'toer toer';
         grid-gap: 15px;
     }
     .grid-container > div {
