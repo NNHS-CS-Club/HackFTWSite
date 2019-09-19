@@ -427,6 +427,9 @@ hr {
 	#promoParaDiv {
 		padding: 100px 60px;
 	}
+	#item3text {
+		top: 37%;
+	}
 }
 
 @media only screen and (orientation : portrait) {
