@@ -469,11 +469,14 @@ hr {
         font-size: 18px;
     }
     #darkLogo {
-        height: 30px;
-        width: 30px;
+        height: 40px;
+        width: 40px;
         padding: 2.2px;
     }
     #htfw {
+        margin: 0 0 0 2%;
+    }
+    #navbar {
         margin: 0 0 0 2%;
     }
 }
