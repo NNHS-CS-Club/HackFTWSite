@@ -407,6 +407,9 @@ hr {
 }
 
 @media only screen and (orientation : portrait) {
+    #leftBar {
+        display: none;
+    }
     #logo {
         font-size: 80px;
     }
@@ -433,10 +436,8 @@ hr {
     .grid-container > div {
         padding: 10px;
     }
-<<<<<<< HEAD
     #item3text {
-        top: 43%;
-
+        top: 42%;
     }
     #item8text {
         top: 40%;
@@ -456,11 +457,9 @@ hr {
         transform: translateY(-50%);
     }
     #item4text {
-        top: 40%
+        top: 40%;
     }
-
+    #item1text {
+        top: 35%;
+    }
 }
-=======
-
-}
->>>>>>> 8584bc124a0547e351ff5fcf078235922d34e873
