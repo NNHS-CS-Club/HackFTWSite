@@ -282,15 +282,7 @@ hr {
 #logoCaption {
 	position: absolute;
 	left: 50%;
-<<<<<<< HEAD
-<<<<<<< HEAD
     width: 800px;
-=======
-    width: 700px;
->>>>>>> 30c8b6030495f87ec6dc308f75115940a44874d5
-=======
-    width: 700px;
->>>>>>> 30c8b6030495f87ec6dc308f75115940a44874d5
 	top: 50%;
 	-webkit-transform: translateX(-50%) translateY(-50%);
 	-moz-transform: translateX(-50%) translateY(-50%);
