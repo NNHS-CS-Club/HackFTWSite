@@ -282,6 +282,7 @@ hr {
 #logoCaption {
 	position: absolute;
 	left: 50%;
+    width: 700px;
 	top: 50%;
 	-webkit-transform: translateX(-50%) translateY(-50%);
 	-moz-transform: translateX(-50%) translateY(-50%);
