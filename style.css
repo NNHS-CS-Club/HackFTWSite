@@ -295,6 +295,7 @@ hr {
 	font-weight:700;
 	font-family: 'Chakra Petch', sans-serif;
 	top: 58%;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 	font-size: 24px;
 	-webkit-transform: translateX(-50%) translateY(-50%);
 	-moz-transform: translateX(-50%) translateY(-50%);
@@ -479,7 +480,6 @@ hr {
 	#placeDate {
 		width: 400px;
 		top: 62%;
-		text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 	}
 	#registerButton:hover {
 		font-size: 30px;
