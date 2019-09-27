@@ -288,6 +288,19 @@ hr {
 	transform: translateX(-50%) translateY(-50%);
 }
 
+#placeDate {
+	position: absolute;
+	left: 50%;
+	text-align:center;
+	font-weight:700;
+	font-family: 'Chakra Petch', sans-serif;
+	top: 58%;
+	font-size: 24px;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	-moz-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+}
+
 #registertextcaption {
 	position: absolute;
 	left: 50%;
@@ -338,7 +351,7 @@ hr {
 .item1 { grid-area: header; }
 .item2 { grid-area: menu; }
 #item2text {
-	top: 35%;
+	top: 30%;
 	position: relative;
 	-webkit-transform: translateY(-50%);
 	-moz-transform: translateY(-50%);
@@ -436,6 +449,13 @@ hr {
 	.grid-container {
 		margin: 0;
 	}
+	#logoCaption {
+		width:500px;
+		top:46%;
+	}
+	#placeDate {
+		width: 500px;
+	}
 }
 
 @media only screen and (orientation : portrait) {
@@ -453,9 +473,13 @@ hr {
     }
     #registerButton {
         width: 220px;
-        text-align: center;
+		text-align: center;
+		top: 75%
 	}
-
+	#placeDate {
+		width: 400px;
+		top:62%;
+	}
 	#registerButton:hover {
 		font-size: 30px;
 	}
