@@ -429,12 +429,13 @@ hr {
     padding: 20px 15px;
     grid-template:
     'dealerinspire sponsor2 sponsor3';
+    border-radius: 12px;
 }
 
 #sponsor1 {
     grid-area: dealerinspire;
     width: 25em;
-    height: 6em;
+    height: 5.57em;
 }
 
 /* width */
