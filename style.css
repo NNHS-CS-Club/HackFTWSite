@@ -408,13 +408,35 @@ hr {
   margin: 0 0 0 7px;
 }
 .grid-container > div {
-	color: black;
+  color: black;
   background-color: #eeeeee;
-	opacity: 0.9;
+  opacity: 0.9;
   text-align: center;
   padding: 20px 15px;
   font-size: 18px;
 }
+
+.sponsors-grid {
+    display: grid;
+    grid-gap: 25px;
+    padding: 20px;
+    margin: 0 0 0 7px;
+}
+
+.sponsors-grid > div {
+    background-color: #eeeeee;
+    opacity: 0.9;
+    padding: 20px 15px;
+    grid-template:
+    'dealerinspire sponsor2 sponsor3';
+}
+
+#sponsor1 {
+    grid-area: dealerinspire;
+    width: 25em;
+    height: 6em;
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 7px;
