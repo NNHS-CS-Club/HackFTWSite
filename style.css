@@ -14,13 +14,13 @@ body {
 	cursor: pointer;
 }
 
-#diDirections {
+#dealer-inspire-directions {
 	cursor: pointer;
     color: #80f9ff;
     transition: 0.2s all;
 }
 
-#diDirections:hover {
+#dealer-inspire-directions:hover {
 	cursor: pointer;
     color: #00f3ff;
 }
@@ -42,7 +42,7 @@ body {
 	transform: translateX(-50%) translateY(-50%);
 }
 
-#promoParaDiv {
+#promo-paragraph-div {
 	color: white;
 	background-color: #393e46;
 	padding: 100px 300px;
@@ -73,7 +73,7 @@ body {
 	height: 300px;
 }
 
-#waiting {
+#what-are-you-waiting-for {
 	position: relative;
 	text-align:center;
 	top: 2em;
@@ -82,7 +82,7 @@ body {
 	transform: translateX(-50%) translateY(-50%);
 }
 
-#sponsorsjudgesteam {
+#sponsors-judges-team {
 	background-image: url("images/parallax4.png");
 	background-attachment: fixed;
   background-position: center;
@@ -114,7 +114,7 @@ body {
 	/* height: 1200px; when we open registration */
 }
 
-#leftBar {
+#left-bar {
 	position: fixed;
 	left: 0px;
 	z-index:100;
@@ -149,7 +149,7 @@ hr {
 	background-color: #00adb5 !important;
 }
 
-#darkLogo {
+#dark-logo {
 	background-color: #36393e;
 	opacity: 1 !important;
 	margin: 0 0 0 -8px;
@@ -159,7 +159,7 @@ hr {
     width: 50px;
 }
 
-#navbarlogo1 {
+#navbar-logo-1 {
 	background-color: #36393e;
 	opacity: 1 !important;
 	color: white !important;
@@ -172,7 +172,7 @@ hr {
 	z-index: 1000;
     display: block !important;
 }
-#navbarlogo2 {
+#navbar-logo-2 {
     background-color: #36393e;
 	opacity: 1 !important;
 	color: white !important;
@@ -211,7 +211,7 @@ hr {
   color: white;
 }
 
-#registerButton {
+#register-button {
 	background: #00adb5;
 	position: absolute;
 	left: 50%;
@@ -228,12 +228,12 @@ hr {
 	font-family: 'Chakra Petch', sans-serif;
 }
 
-#registerButton:hover {
+#register-button:hover {
 	font-size: 35px;
 }
 
-#registerButton2 {
-  /* need to fix this so that the button expands outward instead of expanding down, just like registerButton1. */
+#register-button-2 {
+  /* need to fix this so that the button expands outward instead of expanding down, just like register-button1. */
 	background: #00adb5;
 	position: relative;
 	top: 3.5em;
@@ -246,12 +246,12 @@ hr {
 	font-family: 'Chakra Petch', sans-serif;
 }
 
-#registerButton2:hover {
+#register-button-2:hover {
 	font-size: 35px;
 }
 
 
-#logoDiv {
+#logo-div {
   padding: 16px;
 	background-image: url("images/parallax1.jpg");
 	background-attachment: fixed;
@@ -290,7 +290,7 @@ hr {
 	transform: translateX(-50%) translateY(-50%);
 }
 
-#logoCaption {
+#logo-caption {
 	position: absolute;
 	left: 50%;
     width: 800px;
@@ -300,7 +300,7 @@ hr {
 	transform: translateX(-50%) translateY(-50%);
 }
 
-#placeDate {
+#place-and-date {
 	position: absolute;
 	left: 50%;
 	text-align:center;
@@ -340,7 +340,7 @@ hr {
   width: 100%;
 }
 
-.sticky + #logoDiv{
+.sticky + #logo-div{
   padding-top: 60px;
 }
 
@@ -353,7 +353,7 @@ hr {
   }
 }
 
-#faqDiv {
+#faq-div {
 	background-image: url("images/parallax2.jpg");
 	background-attachment: fixed;
   background-position: center;
@@ -363,7 +363,7 @@ hr {
 
 .item1 { grid-area: header; }
 .item2 { grid-area: menu; }
-#item2text {
+#item2-text {
 	top: 30%;
 	position: relative;
 	-webkit-transform: translateY(-50%);
@@ -371,7 +371,7 @@ hr {
 	transform: translateY(-50%);
 }
 .item3 { grid-area: main; }
-#item3text {
+#item3-text {
 	top: 30%;
 	position: relative;
 	-webkit-transform: translateY(-50%);
@@ -379,7 +379,7 @@ hr {
 	transform: translateY(-50%);
 }
 .item4 { grid-area: right; }
-#item4text {
+#item4-text {
 	top: 30%;
 	position: relative;
 	-webkit-transform: translateY(-50%);
@@ -389,7 +389,7 @@ hr {
 .item5 { grid-area: footer; }
 .item6 { grid-area: legger; }
 .item7 { grid-area: armer; }
-#item7text {
+#item7-text {
 	top: 35%;
 	position: relative;
 	-webkit-transform: translateY(-50%);
@@ -397,7 +397,7 @@ hr {
 	transform: translateY(-50%);
 }
 .item8 { grid-area: finger; }
-#item8text {
+#item8-text {
 	top: 30%;
 	position: relative;
 	-webkit-transform: translateY(-50%);
@@ -406,7 +406,7 @@ hr {
 }
 .item9 { grid-area: toer; }
 
-.grid-container {
+.faq-grid-container {
   display: grid;
   grid-template:
     'header header header header header header'
@@ -418,7 +418,7 @@ hr {
   padding: 20px;
   margin: 0 0 0 7px;
 }
-.grid-container > div {
+.faq-grid-container > div {
   color: black;
   background-color: #eeeeee;
   opacity: 0.9;
@@ -427,14 +427,14 @@ hr {
   font-size: 18px;
 }
 
-.sponsors-grid {
+.sponsors-grid-container {
     display: grid;
     grid-gap: 25px 0;
     padding: 20px;
     margin: 0 0 0 7px;
 }
 
-.sponsors-grid > div {
+.sponsors-grid-container > div {
     background-color: #eeeeee;
     opacity: 0.9;
     padding: 20px 15px;
@@ -473,36 +473,36 @@ hr {
 }
 
 @media only screen and (orientation: landscape) and (max-height: 480px) {
-	#promoParaDiv {
+	#promo-paragraph-div {
 		padding: 100px 60px;
 	}
-	#item3text {
+	#item3-text {
 		top: 37%;
 	}
-	#leftBar {
+	#left-bar {
         display: none;
 	}
-	.grid-container {
+	.faq-grid-container {
 		margin: 0;
 	}
-    .sponsors-grid {
+    .sponsors-grid-container {
 		margin: 0;
 	}
     #sponsor1 {
         width: 20em;
         height: 4.456em;
     }
-	#logoCaption {
+	#logo-caption {
 		width:500px;
 		top:46%;
 	}
-	#placeDate {
+	#place-and-date {
 		width: 500px;
 	}
 }
 
 @media only screen and (orientation : portrait) {
-    #leftBar {
+    #left-bar {
         display: none;
     }
     #logo {
@@ -510,30 +510,30 @@ hr {
         animation: none;
         text-shadow: 0 0 20px #fff, 0 0 30px #00adb5, 0 0 40px #00adb5, 0 0 50px #00adb5, 0 0 60px #00adb5, 0 0 70px #00adb5, 0 0 80px #00adb5;
     }
-    #logoCaption {
+    #logo-caption {
         width: 400px;
         font-size: 23px;
     }
-    #registerButton {
+    #register-button {
         width: 220px;
 		text-align: center;
 		top: 75%
 	}
-	#placeDate {
+	#place-and-date {
 		width: 400px;
 		top: 62%;
 	}
-	#registerButton:hover {
+	#register-button:hover {
 		font-size: 30px;
 	}
-	#registerButton2:hover {
+	#register-button-2:hover {
 		font-size: 30px;
 	}
-    #promoParaDiv {
+    #promo-paragraph-div {
         font-size: 17px;
         padding: 50px 30px;
     }
-    .grid-container {
+    .faq-grid-container {
         grid-template:
         'menu menu'
         'right right'
@@ -547,40 +547,40 @@ hr {
 		grid-gap: 15px;
 		margin: 0;
     }
-    .sponsors-grid {
+    .sponsors-grid-container {
         margin: 0;
     }
     #sponsor1 {
         width: 10em;
         height: 2.228em;
     }
-    .grid-container > div {
+    .faq-grid-container > div {
         padding: 10px;
     }
-    #item3text {
+    #item3-text {
         top: 35%;
     }
-    #item8text {
+    #item8-text {
         top: 30%;
     }
-    #item9text {
-        top: 30%;
-        position: relative;
-        -webkit-transform: translateY(-50%);
-        -moz-transform: translateY(-50%);
-        transform: translateY(-50%);
-    }
-    #item1text {
+    #item9-text {
         top: 30%;
         position: relative;
         -webkit-transform: translateY(-50%);
         -moz-transform: translateY(-50%);
         transform: translateY(-50%);
     }
-    #item4text {
+    #item1-text {
+        top: 30%;
+        position: relative;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+    #item4-text {
         top: 30%;
     }
-    #item1text {
+    #item1-text {
         top: 35%;
 	}
 	#item2text {
@@ -590,7 +590,7 @@ hr {
         padding: 10px 12px;
         font-size: 18px;
     }
-    #darkLogo {
+    #dark-logo {
         height: 40px;
         width: 40px;
         padding: 2.2px 10px 2.2px 2.2px;
@@ -599,10 +599,10 @@ hr {
         height: 48px;
         margin: 0 0 0 2% !important;
     }
-    #navbarlogo1 {
+    #navbar-logo-1 {
         display: none !important;
     }
-    #navbarlogo2 {
+    #navbar-logo-2 {
         display: block !important;
     }
 }
