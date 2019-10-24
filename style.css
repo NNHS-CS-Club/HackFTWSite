@@ -33,8 +33,9 @@ body {
 #formFrame {
 	position: absolute;
 	background: #393e46;
-	height: 1010px;
-	width:600px;
+	height: 1350px;
+	width: 40vw;
+    min-width: 350px;
 	left: 50%;
 	top: 100%;
 	-webkit-transform: translateX(-50%) translateY(-50%);
@@ -96,7 +97,8 @@ body {
 	-webkit-transform: translateX(-50%) translateY(-50%);
 	-moz-transform: translateX(-50%) translateY(-50%);
 	transform: translateX(-50%) translateY(-50%);
-	top: 50%;
+	top: 15%;
+    text-align: center;
 	color: white;
 	left: 50%;
 	background: #00adb5;
@@ -110,7 +112,7 @@ body {
   background-position: center;
 	background-repeat: no-repeat;
   background-size: cover;
-	height: 100vh;
+	height: 1600px;
 	/* height: 1200px; when we open registration */
 }
 
@@ -473,6 +475,14 @@ hr {
 }
 
 @media only screen and (orientation: landscape) and (max-height: 480px) {
+    #register-info {
+        top: 30%;
+        width: 60vw;
+    }
+    #formFrame {
+        width: 70vw;
+        top: 215vh;
+    }
 	#promo-paragraph-div {
 		padding: 100px 60px;
 	}
@@ -502,6 +512,15 @@ hr {
 }
 
 @media only screen and (orientation : portrait) {
+    #register-info {
+        font-size: 20px;
+        top: 13%;
+        width: 80vw;
+        padding: 5px 20px;
+    }
+    #formFrame {
+        top: 125%;
+    }
     #left-bar {
         display: none;
     }
