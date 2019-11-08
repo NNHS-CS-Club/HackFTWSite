@@ -9,10 +9,12 @@
 		 url("/fonts/Bio-Sans-Bold.woff2") format("woff2");
 }
 body {
-  margin: 0;
-  font-size: 28px;
-  font-family: 'BioSans', sans-serif;
+	margin: 0;
+	font-size: 28px;
+	font-family: 'BioSans', sans-serif;
 	transition: 0.2s all;
+	width: 100%;
+	overflow-x: hidden;
 }
 
 #hereLink {
@@ -34,11 +36,6 @@ body {
     color: #00f3ff;
 }
 
-#gray {
-	background-color: #393e46;
-	width: 100%;
-}
-
 #formFrame {
 	position: absolute;
 	background: #393e46;
@@ -53,7 +50,7 @@ body {
 }
 
 #promo-paragraph {
-	color: #0065ff;
+	color: #010E30;
 	margin: 0;
 	grid-row: 2/3;
 	grid-column: 2/5;
@@ -63,6 +60,7 @@ body {
 #navbar {
   background-color: #fff;
   z-index: 1;
+  height: 11vh;
   border-bottom: 3px solid #0065ff;
 }
 
@@ -78,7 +76,7 @@ body {
 	width: 90%;
 }
 
-#register2 {	
+#register2 {
 	position: relative;
 	height: 40vh;
 	background-image: url("images/net.jpg");
@@ -90,7 +88,30 @@ body {
 
 #register2-shade {
 	color: white;
-	grid-template: 25% 30% / 11% 89%;
+	grid-template: 25% 30% 23% 22% / 11% 66% 11%;
+    display: grid;
+	background-color: rgba(1, 14, 48, 0.7);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+
+}
+
+#register-footer {
+	position: relative;
+	height: 30vh;
+	background-image: url("images/net.jpg");
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#register-footer-shade {
+	color: white;
+	grid-template: 25% 20% 23% 22% / 11% 66% 11%;
     display: grid;
 	background-color: rgba(1, 14, 48, 0.7);
 	position: absolute;
@@ -106,43 +127,51 @@ body {
 	font-size: 4.2vh;
 }
 
+#sponsored-by {
+	grid-area: 4/3/5/5;
+	font-size: 3vh;
+	color: white;
+}
+
+#di-logo {
+	grid-area: 3/4/4/5;
+	height: 13vh;
+}
+
 #description-faq {
 	display: grid;
-	grid-template: 4% 15% 7% 14% 11% 17% 14% / 11% 30% 11% 40%;
-	height: 210vh;
+	grid-template: 4% 17% 6% 13% 13% 17% 12% / 11% 37% 4% 37% 11%;
+	height: 180vh;
 }
 
 #register-info {
-	position: absolute;
-	-webkit-transform: translateX(-50%) translateY(-50%);
-	-moz-transform: translateX(-50%) translateY(-50%);
-	transform: translateX(-50%) translateY(-50%);
-	top: 15%;
+	line-height: 40vh;
     text-align: center;
 	color: white;
-	left: 50%;
 	background: #0065ff;
 	border-radius: 10px;
-	padding: 15px 25px;
+	padding: 2vh 3vh;
+	font-size: 5vh;
 }
 
-#register-background {
-	background-image: url("images/697616.png");
-	background-attachment: fixed;
-  background-position: center;
-	background-repeat: no-repeat;
-  background-size: cover;
-	height: 1600px;
+#eventbrite-widget-modal-trigger {
+	color: #fff;
+	margin: 0;
+	border: 0;
+	position: relative;
+	top: 50%;
+	background: #0065ff;
+	border-radius: 10px;
+	padding: 2vh 3vh;
+	font-size: 4vh;
+	font-family: 'BioSans', sans-serif;
+}
+
+#register-container {
+	height: 70vh;
+	width: 100%;
+	text-align: center;
 	/* height: 1200px; when we open registration */
-}
-
-#left-bar {
-	position: fixed;
-	left: 0px;
-	z-index:100;
-	width: 7px;
-	height:100%;
-	background-color: #393e46;
 }
 
 #register, #contact {
@@ -150,16 +179,9 @@ body {
 	opacity: 1;
 }
 
-hr {
-	border: none;
-	height: 1px;
-	z-index: 99;
-	color: #00f;
-}
-
 #hftw {
-	width: 320px;
-	height: 55px;
+	width: 0;
+	height: 75%;
 	margin: 0 0 0 11%;
 }
 
@@ -172,51 +194,18 @@ hr {
 }
 
 #dark-logo {
-	padding: 10px 0;
 	transition: 0.2s all;
-    height: 60px;
-    
-}
-
-#navbar-logo-1 {
-	background-color: #36393e;
-	opacity: 1 !important;
-	color: white !important;
-	width: auto;
-	float: left;
-	margin: 0 0 0 10%;
-	font-family: 'Chakra Petch', sans-serif;
-	font-weight: 700;
-	transition: 0.2s all;
-	z-index: 1000;
-    display: block !important;
-}
-#navbar-logo-2 {
-    background-color: #36393e;
-	opacity: 1 !important;
-	color: white !important;
-	width: auto;
-	float: left;
-	margin: 0 0 0 2%;
-	font-family: 'Chakra Petch', sans-serif;
-	font-weight: 700;
-	transition: 0.2s all;
-	z-index: 1000;
-    display: none !important;
-}
-
-#imageHREF {
-	text-align: left !important;
-	padding: 0 !important;
+    height: 100%;
+    padding: 1.5vh;
 }
 
 #navbar a {
   display: block;
   color: #0065ff;;
   text-align: center;
-  padding: 25px 16px;
+  padding: 3.5vh;
   text-decoration: none;
-  font-size: 21px;
+  font-size: 3vh;
   transition: 0.2s all;
 }
 
@@ -250,10 +239,9 @@ hr {
 }
 
 #register-button-2 {
-  /* need to fix this so that the button expands outward instead of expanding down, just like register-button1. */
   display: table;
   background: #0065ff;
-  width:fit-content;
+  width: fit-content;
   grid-area: 3/2/4/3;
   text-decoration: none;
   padding: 15px 25px;
@@ -291,19 +279,6 @@ hr {
 	height: 100%;
 }
 
-#logo {
-	font-size: 90px;
-	font-family: 'Chakra Petch', sans-serif;
-	animation: glow 2s ease-in-out infinite alternate;
-	font-weight:700;
-	margin: 0;
-  position: absolute;
-	left: 50%;
-	top: 30%;
-	-webkit-transform: translateX(-50%) translateY(-50%);
-	-moz-transform: translateX(-50%) translateY(-50%);
-	transform: translateX(-50%) translateY(-50%);
-}
 
 #registertext {
 	font-size: 90px;
@@ -345,35 +320,21 @@ hr {
 	grid-row: 3/4;
 	grid-column: 2/5;
 	margin: 0;
-	color: #0065ff;
+	color: #010E30;
 	font-size: 5vh;
 	font-weight: 700;
 }
+
 .sticky {
   position: fixed;
   top: 0;
   width: 100%;
 }
 
-.sticky + #logo-div{
-  padding-top: 60px;
-}
-
-@-webkit-keyframes glow {
-  from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #670ec3;
-  }
-  to {
-    text-shadow: 0 0 20px #fff, 0 0 30px #0065ff, 0 0 40px #0065ff, 0 0 50px #0065ff, 0 0 60px #0065ff, 0 0 70px #0065ff, 0 0 80px #0065ff;
-  }
-}
-
 .faq-item {
-	color: #0065ff;
+	color: #010E30;
 	font-size: 3vh;
 }
-
-
 
 .faq-item strong {
 	line-height: 250%;
@@ -389,29 +350,7 @@ hr {
 #item8 { grid-area: 7/4/8/5; }
 #item9 { grid-area: 8/2/9/3; }
 
-.sponsors-grid-container {
-    display: grid;
-    grid-gap: 25px 0;
-    padding: 20px;
-    margin: 0 0 0 7px;
-}
-
-.sponsors-grid-container > div {
-    background-color: #eeeeee;
-    opacity: 0.9;
-    padding: 20px 15px;
-    grid-template:
-    'dealerinspire';
-    border-radius: 12px;
-}
-
-#sponsor1 {
-    grid-area: dealerinspire;
-    width: 25em;
-    height: 5.57em;
-}
-
-@media only screen and (orientation: landscape) and (max-height: 480px) {
+@media only screen and (orientation: portrait) and (max-height: 480px) {
     
 }
 

@@ -1,40 +1,64 @@
 <!DOCTYPE html>
-<html>
+<html lang=en>
 <head>
-<link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
-<link rel="manifest" href="/icons/site.webmanifest">
-<link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#5bbad5">
-<meta name="msapplication-TileColor" content="#603cba">
-<meta name="theme-color" content="#ffffff">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+  <link rel="manifest" href="/icons/site.webmanifest">
+  <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#0065ff">
+  <link rel="shortcut icon" href="/icons/favicon.ico">
+  <meta name="msapplication-TileColor" content="#0065ff">
+  <meta name="msapplication-config" content="/icons/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=0">
+
 <title>Hack For the World</title>
 <link rel="stylesheet" type="text/css" href="style.css">
 <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Chakra+Petch:400,700&display=swap" rel="stylesheet">
+
 </head>
 <body>
 
 <div id="navbar" class="sticky">
-  <a id="contact" onClick="window.open('mailto:jjgosar@stu.naperville203.org', 'mail');event.preventDefault()" href="mailto:jjgosar@stu.naperville203.org">Contact</a>
+  <a id="contact" onclick="window.open('mailto:jjgosar@stu.naperville203.org', 'mail');event.preventDefault()">Contact</a>
   <a id="register" href="/register.html">Register</a>
 	<div id="hftw" onclick="window.location.href = '/#'">
-  <a id="navbar-logo-1" href="#">Hack For the World</a>
-  <a id="navbar-logo-2" href="#">HFTW</a>
-	<img id="dark-logo" src="images/DarkModeHFTW.png" height=50 width=50>
+	<img id="dark-logo" src="images/hftw-dark.png">
 	</div>
 </div>
 
-<div id="left-bar">
-
+<div id="register-container">
+	<!-- Noscript content for added SEO -->
+	<noscript><a href="https://www.eventbrite.com/e/hack-for-the-world-chicago-registration-79974063577" rel="noopener noreferrer" target="_blank"></noscript>
+		<!-- You can customize this button any way you like -->
+		<button id="eventbrite-widget-modal-trigger" type="button">Register Here</button>
+		<noscript></a>Buy Tickets on Eventbrite</noscript>
+		
+		<script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
+		
+		<script type="text/javascript">
+		var exampleCallback = function() {
+			console.log('Order complete!');
+		};
+		
+		window.EBWidgets.createWidget({
+			widgetType: 'checkout',
+			eventId: '79974063577',
+			modal: true,
+			modalTriggerElementId: 'eventbrite-widget-modal-trigger',
+			onOrderComplete: exampleCallback
+		});
+	</script>
 </div>
-
-<div id="register-background">
-	<h id="register-info">Registration is open, see you there!</h> <!--change to "see you there!"-->
-	<iframe src="https://docs.google.com/forms/d/1FU3viyYwv9ykO_kSBn9uJJKqf-ZlfHWcehy642pIphQ/viewform?edit_requested=true" id="formFrame">
-</div>
-
+	
+<div id="register-footer">
+	<div id="register-footer-shade">
+	  <h id="what-are-you-waiting-for">See you there!</h>
+	  <h id="sponsored-by">Sponsored by</h>
+	  <img id="di-logo" src="images/DISymbol-white.png">
+	</div>
+  </div>
 
 <script src="script.js"></script>
 </body>
