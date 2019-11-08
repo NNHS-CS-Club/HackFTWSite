@@ -185,18 +185,14 @@ body {
 	margin: 0 0 0 11%;
 }
 
-#hftw:hover img {
-	background-color: #0065ff !important;
-}
-
-#hftw:hover a {
-	background-color: #0065ff !important;
-}
-
 #dark-logo {
 	transition: 0.2s all;
     height: 100%;
-    padding: 1.5vh;
+	padding: 1.5vh;
+}
+
+#dark-logo:hover {
+	background-color: #0065ff !important;
 }
 
 #navbar a {
