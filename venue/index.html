@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang=en>
 <head>
-  <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
-  <link rel="manifest" href="/icons/site.webmanifest">
-  <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#0065ff">
-  <link rel="shortcut icon" href="/icons/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="../icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../icons/favicon-16x16.png">
+  <link rel="manifest" href="../icons/site.webmanifest">
+  <link rel="mask-icon" href="../icons/safari-pinned-tab.svg" color="#0065ff">
+  <link rel="shortcut icon" href="../icons/favicon.ico">
   <meta name="msapplication-TileColor" content="#0065ff">
-  <meta name="msapplication-config" content="/icons/browserconfig.xml">
+  <meta name="msapplication-config" content="../icons/browserconfig.xml">
   <meta name="theme-color" content="#ffffff">
 <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=0">
 
 <title>Hack For the World</title>
-<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="../style.css">
 <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Chakra+Petch:400,700&display=swap" rel="stylesheet">
 
@@ -22,15 +22,16 @@
 
 <div id="navbar" class="sticky">
   <a id="contact" onclick="window.open('mailto:jjgosar@stu.naperville203.org', 'mail');event.preventDefault()">Contact</a>
-  <a id="register" href="#">Venue</a>
-	<div id="hftw" onclick="window.location.href = '/#'">
-	<img id="dark-logo" onmouseover="hover(this)" onmouseout="unhover(this)" src="images/hftw-dark.png">
+  <a id="venue" href="/venue/#">Venue</a>
+	<div id="hftw" onclick="window.location.href = '/'">
+  <img id="dark-logo" class="big" onmouseover="hover(this)" onmouseout="unhover(this)" src="../images/hftw-dark.png">
+  <img id="dark-logo" class="small" src="../images/hftw-small.png">
 	</div>
 </div>
 
 <div id="logo-parent">
   <div id="logo-div">
-  <h id="logo-caption">What can you make in 12 hours<br>that could change the world?</h>
+  <h id="logo-caption">What can you make in 12 hours <br id="break">that could change the world?</h>
   <p id="place-and-date">February 1st 8am-8pm @ <a id="dealer-inspire-directions" href="https://www.google.com/maps/place/Dealer+Inspire/@41.7757912,-88.2021895,18.33z/data=!4m5!3m4!1s0x880e57b8b709e617:0x632754e78b2bfb51!8m2!3d41.7756079!4d-88.2011456">Dealer Inspire</a>, Naperville</p>
   <a id="eventbrite-widget-modal-trigger" class="register-button">Register Now »</a>
   </div>
@@ -47,37 +48,18 @@
     <div class="faq-item" id="item6"><strong>What if I can already code?</strong><br>HackFTW is for you, too! We welcome (and have prizes for) absolute beginners, experts, & everyone in between.</div>
     <div class="faq-item" id="item7"><strong>Do I need a team?</strong><br>Nope! You’ll have an opportunity to meet fellow hackers and make teams of up to 5; find some new friends, bring yours, or work alone.</div>
     <div class="faq-item" id="item8"><strong>What should I bring?</strong><br>Plan to bring a student ID, computer (any kind), chargers, and anything else for your hack (e.g. hardware).</div>
-    <div class="faq-item" id="item9"><strong>Who runs this? Is it supervised?</strong><br>We’re independently-organized by high schoolers, sponsored via an international nonprofit called Hack Club. It’s fully supervised by adult mentors & chaperones.</div>
+    <div class="faq-item" id="item9"><strong id="item9-strong1">Who runs this?</strong><br id="item9-br"><strong id="item9-strong2">Is it supervised?</strong><br>We’re independently-organized by high schoolers, sponsored via an international nonprofit called Hack Club. It’s fully supervised by adult mentors & chaperones.</div>
   </div>
+
 <div id="register2">
   <div id="register2-shade">
     <h id="what-are-you-waiting-for">What are you waiting for?</h>
     <a id="eventbrite-widget-modal-trigger" class="register-button-2">Register Now »</a>
-    <h id="sponsored-by">Sponsored by</h>
-    <img id="di-logo" src="images/DISymbol-white.png">
+    <img id="di-logo" class="big" src="../images/DI-sponsored.png">
+    <img id="di-logo" class="small" src="../images/DI-sponsored-1line.png">
   </div>
 </div>
 
-	<!-- Noscript content for added SEO -->
-	<noscript><a href="https://www.eventbrite.com/e/hack-for-the-world-chicago-registration-79974063577" rel="noopener noreferrer" target="_blank"></noscript>
-		<!-- You can customize this button any way you like -->
-		<noscript></a>Buy Tickets on Eventbrite</noscript>
-		
-		<script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
-		
-		<script type="text/javascript">
-		var exampleCallback = function() {
-			console.log('Order complete!');
-		};
-		
-		window.EBWidgets.createWidget({
-			widgetType: 'checkout',
-			eventId: '79974063577',
-			modal: true,
-			modalTriggerElementId: 'eventbrite-widget-modal-trigger',
-			onOrderComplete: exampleCallback
-		});
-	</script>
 <script src="script.js"></script>
 </body>
 </html>

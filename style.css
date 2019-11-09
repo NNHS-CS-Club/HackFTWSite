@@ -140,6 +140,9 @@ body {
 	font-size: 5vh;
 }
 
+#item9-br {
+	display: none !important;
+}
 
 #register-container {
 	height: 70vh;
@@ -148,7 +151,7 @@ body {
 	/* height: 1200px; when we open registration */
 }
 
-#register, #contact {
+#venue, #contact {
 	float: right;
 	opacity: 1;
 }
@@ -402,13 +405,10 @@ body {
 		grid-area: 	4/2/5/3;
 		height: 6vh;
 	}
-
 }
 
 @media only screen 
 and (min-device-width : 375px) 
-and (max-device-width : 812px) 
-and (-webkit-device-pixel-ratio : 3)
 and (orientation : portrait) {
 	#navbar a {
 		padding: 3.5vh 2vh 3.5vh 2vh;
@@ -437,5 +437,8 @@ and (orientation : portrait) {
 	}
 	#item9-strong1 {
 		line-height: normal;
+	}
+	#item9-br {
+		display: block !important;
 	}
 }
