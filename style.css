@@ -18,11 +18,8 @@ body {
 }
 
 #hereLink {
-	border-radius: 10px;
-	background: #0065ff;
-	padding: 0 5px;
-	color: white;
 	cursor: pointer;
+	text-decoration: underline;
 }
 
 #dealer-inspire-directions {
@@ -154,18 +151,6 @@ body {
 	font-size: 5vh;
 }
 
-#eventbrite-widget-modal-trigger {
-	color: #fff;
-	margin: 0;
-	border: 0;
-	position: relative;
-	top: 50%;
-	background: #0065ff;
-	border-radius: 10px;
-	padding: 2vh 3vh;
-	font-size: 4vh;
-	font-family: 'BioSans', sans-serif;
-}
 
 #register-container {
 	height: 70vh;
@@ -217,7 +202,7 @@ body {
   color: white;
 }
 
-#register-button {
+.register-button {
 	display: table;
 	background: #0065ff;
 	width:fit-content;
@@ -232,11 +217,11 @@ body {
 	font-family: 'Chakra Petch', sans-serif;
 }
 
-#register-button:hover {
+.register-button:hover {
 	font-size: 5vh;
 }
 
-#register-button-2 {
+.register-button-2 {
   display: table;
   background: #0065ff;
   width: fit-content;
@@ -250,7 +235,7 @@ body {
   font-family: 'Chakra Petch', sans-serif;
 }
 
-#register-button-2:hover {
+.register-button-2:hover {
 	font-size: 5vh;
 }
 
@@ -268,7 +253,7 @@ body {
 
 #logo-div {
 	display: grid;
-	grid-template: 35% 20% 6% 9% 12% / 11% 89%;
+	grid-template: 35% 20% 6% 9% 12% / 11% 78% 11%;
     background-color: rgba(1, 14, 48, 0.7);
     position: absolute;
     top: 0;
@@ -313,6 +298,13 @@ body {
 	transform: translateX(-50%) translateY(-50%);
 }
 
+.small-logo {
+	display: none !important;
+}
+
+.big-logo {
+	display: block !important;
+}
 
 #faq {
 	grid-row: 3/4;
@@ -353,5 +345,61 @@ body {
 }
 
 @media only screen and (orientation : portrait) {
-    
+    #break {
+		display: none;
+	}
+	#logo-caption {
+		font-size: 4vh;
+	}
+	#place-and-date {
+		font-size: 3vh;
+	}
+	#logo-div {
+		grid-template: 35% 22% 6% 9% 10% / 11% 78% 11%;
+	}
+	#description-faq {
+		grid-template: 2% 16% 4% 6.5% 7% 5.5% 10% 19% 6.5% 6.5% 8.5% / 11% 78% 11%;
+		height: 450vh;
+	}
+	#promo-paragraph {
+		font-size: 3vh;
+		grid-column: 2/3;
+	}
+	#faq {
+		grid-column: 2/3;
+	}
+	#item1 {
+		grid-area: 4/2/5/3;
+	}
+	#item2 {
+		grid-area: 6/2/7/3;
+	}
+	#item3 {
+		grid-area: 7/2/8/3;
+	}
+	#item4 {
+		grid-area: 5/2/6/3;
+	}
+	#item5 {
+		grid-area: 8/2/9/3;
+	}
+	#item6 {
+		grid-area: 9/2/10/3;
+	}
+	#item7 {
+		grid-area: 12/2/13/3;
+	}
+	#item8 {
+		grid-area: 10/2/11/3;
+	}
+	#item9 {
+		grid-area: 11/2/12/3;
+	}
+	.small-logo {
+		display: block !important;
+	}
+	.big-logo {
+		display: none !important;
+	}
+
 }
