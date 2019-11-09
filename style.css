@@ -28,11 +28,6 @@ body {
     transition: 0.2s all;
 }
 
-#dealer-inspire-directions:hover {
-	cursor: pointer;
-    color: #00f3ff;
-}
-
 #formFrame {
 	position: absolute;
 	background: #393e46;
@@ -171,10 +166,6 @@ body {
 	cursor: pointer;
 }
 
-#dark-logo:hover {
-	background-color: #0065ff !important;
-}
-
 #navbar a {
   display: block;
   color: #0065ff;;
@@ -184,16 +175,6 @@ body {
   font-size: 3vh;
   transition: 0.2s all;
   cursor: pointer;
-}
-
-#navbar a:hover {
-  background-color: #0065ff;;
-  color: white;
-}
-
-#navbar a.active {
-  background-color: #393e46;
-  color: white;
 }
 
 .register-button {
@@ -211,10 +192,6 @@ body {
 	font-family: 'Chakra Petch', sans-serif;
 }
 
-.register-button:hover {
-	font-size: 5vh;
-}
-
 .register-button-2 {
   display: table;
   background: #0065ff;
@@ -229,9 +206,7 @@ body {
   font-family: 'Chakra Petch', sans-serif;
 }
 
-.register-button-2:hover {
-	font-size: 5vh;
-}
+
 
 #logo-parent {
 	height: 75vh;
@@ -333,6 +308,30 @@ body {
 #item7 { grid-area: 8/4/9/5; }
 #item8 { grid-area: 7/4/8/5; }
 #item9 { grid-area: 8/2/9/3; }
+
+@media (hover:hover) {
+    #dealer-inspire-directions:hover {
+		cursor: pointer;
+		color: #00f3ff;
+	}
+	#dark-logo:hover {
+		background-color: #0065ff !important;
+	}
+	#navbar a:hover {
+		background-color: #0065ff;;
+		color: white;
+	  }
+	#navbar a.active {
+		background-color: #393e46;
+		color: white;
+	}
+	.register-button-2:hover {
+		font-size: 5vh;
+	}
+	.register-button:hover {
+		font-size: 5vh;
+	}
+}
 
 @media only screen and (orientation : portrait) {
     #break {
