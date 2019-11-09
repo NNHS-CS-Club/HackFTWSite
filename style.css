@@ -44,9 +44,8 @@ body {
 #promo-paragraph {
 	color: #010E30;
 	margin: 0;
-	grid-row: 2/3;
-	grid-column: 2/5;
 	font-size: 3.5vh;
+	padding: 5vh 0;
 }
 
 #navbar {
@@ -125,9 +124,9 @@ body {
 }
 
 #description-faq {
-	display: grid;
-	grid-template: 4% 17% 6% 13% 13% 17% 12% / 11% 37% 4% 37% 11%;
-	height: 180vh;
+	display: flex;
+	flex-direction: column;
+	padding: 0 11%
 }
 
 #register-info {
@@ -296,21 +295,16 @@ body {
 .faq-item {
 	color: #010E30;
 	font-size: 3vh;
+	padding: 2.5vh 0;
 }
 
 .faq-item strong {
 	line-height: 250%;
 }
 
-#item1 { grid-area: 4/2/5/3; }
-#item2 { grid-area: 5/2/6/3; }
-#item3 { grid-area: 6/2/7/3; }
-#item4 { grid-area: 4/4/5/5; }
-#item5 { grid-area: 5/4/6/5; }
-#item6 { grid-area: 7/2/8/3; }
-#item7 { grid-area: 8/4/9/5; }
-#item8 { grid-area: 7/4/8/5; }
-#item9 { grid-area: 8/2/9/3; }
+#item9 {
+	padding-bottom: 7vh;
+}
 
 @media (hover:hover) {
     #dealer-inspire-directions:hover {
@@ -349,43 +343,12 @@ body {
 	#logo-div {
 		grid-template: 35% 22% 6% 9% 10% / 11% 78% 11%;
 	}
-	#description-faq {
-		grid-template: 2% 16% 4% 6.5% 7% 5.5% 10% 19% 6.5% 6.5% 8.5% / 11% 78% 11%;
-		height: 450vh;
-	}
 	#promo-paragraph {
 		font-size: 3vh;
-		grid-column: 2/3;
+		padding: 3vh 0;
 	}
-	#faq {
-		grid-column: 2/3;
-	}
-	#item1 {
-		grid-area: 4/2/5/3;
-	}
-	#item2 {
-		grid-area: 6/2/7/3;
-	}
-	#item3 {
-		grid-area: 7/2/8/3;
-	}
-	#item4 {
-		grid-area: 5/2/6/3;
-	}
-	#item5 {
-		grid-area: 8/2/9/3;
-	}
-	#item6 {
-		grid-area: 9/2/10/3;
-	}
-	#item7 {
-		grid-area: 12/2/13/3;
-	}
-	#item8 {
-		grid-area: 10/2/11/3;
-	}
-	#item9 {
-		grid-area: 11/2/12/3;
+	.faq-item {
+		padding: 1.5vh 0;
 	}
 	.small {
 		display: block !important;
@@ -424,10 +387,6 @@ and (orientation : portrait) {
 	}
 	#promo-paragraph {
 		font-size: 2.5vh;
-	}
-	#description-faq {
-		grid-template: 2% 14% 5.5% 5.5% 6.5% 5.5% 9.5% 19.5% 6.5% 6.5% 9% / 11% 78% 11%;
-		height: 440vh;
 	}
 	#what-are-you-waiting-for {
 		font-size: 3vh;
