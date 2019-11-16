@@ -119,7 +119,9 @@ body {
 }
 
 #di-logo {
-	grid-area: 3/3/4/4;
+	position: absolute;
+	bottom: 11%;
+	right: 5%;
 	height: 13vh;
 }
 
@@ -401,6 +403,7 @@ body {
 	#di-logo {
 		grid-area: 	4/2/5/3;
 		height: 6vh;
+		position: static;
 	}
 	#map-container-container {
 		margin-top: 30%;
