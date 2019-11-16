@@ -241,7 +241,7 @@ body {
 #logo-caption {
 	grid-row: 2/3;
 	grid-column: 2/3;
-	font-size: 6vh;
+	font-size: 5.5vh;
 }
 
 #place-and-date {
@@ -426,7 +426,7 @@ and (orientation : portrait) {
 		grid-template: 30% 20% 8% 15% 10% / 11% 78% 11%;
 	}
 	#logo-caption {
-		font-size: 3.5vh;
+		font-size: 3.6vh;
 	}
 	.register-button {
 		font-size: 3vh;
