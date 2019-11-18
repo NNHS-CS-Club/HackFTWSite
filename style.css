@@ -323,6 +323,7 @@ body {
 	font-size: 4vh;
 	font-family: "BioSans";
 	text-decoration: none;
+	transition: 0.2s all;
 }
 
 #di-title {
@@ -338,7 +339,7 @@ body {
 	padding-bottom: 7vh;
 }
 
-@media (hover:hover) {
+@media not all and (pointer: coarse) {
     #dealer-inspire-directions:hover {
 		cursor: pointer;
 		color: #00f3ff;
@@ -358,6 +359,9 @@ body {
 		font-size: 5vh;
 	}
 	.register-button:hover {
+		font-size: 5vh;
+	}
+	#view-on-maps:hover {
 		font-size: 5vh;
 	}
 }
