@@ -304,6 +304,12 @@ body {
 	height: auto;
 }
 
+.venue-img-div {
+	object-fit: contain;
+	max-height: 100%;
+	height: auto;
+}
+
 #map {
 	border: 0;
     width: 100%;
@@ -425,6 +431,9 @@ body {
 		font-size: 2.5vh;
 	}
 	.venue-img {
+		width: auto;
+	}
+	.venue-img-div {
 		width: auto;
 	}
 }
