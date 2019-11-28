@@ -202,6 +202,7 @@ body {
 	font-family: 'Chakra Petch', sans-serif;
 }
 
+
 .register-button-2 {
   display: table;
   background: #0065ff;
@@ -366,9 +367,11 @@ body {
 	}
 	.register-button-2:hover {
 		font-size: 5vh;
+		cursor : pointer;
 	}
 	.register-button:hover {
 		font-size: 5vh;
+		cursor : pointer;
 	}
 	#view-on-maps:hover {
 		font-size: 5vh;
