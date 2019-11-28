@@ -20,6 +20,7 @@ body {
 #hereLink {
 	cursor: pointer;
 	text-decoration: underline;
+	color: #0065ff;
 }
 
 #dealer-inspire-directions {
