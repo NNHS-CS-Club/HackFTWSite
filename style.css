@@ -20,7 +20,6 @@ body {
 #hereLink {
 	cursor: pointer;
 	text-decoration: underline;
-	color: #0065ff;
 }
 
 #dealer-inspire-directions {
@@ -352,6 +351,10 @@ body {
 
 @media not all and (pointer: coarse) {
     #dealer-inspire-directions:hover {
+		cursor: pointer;
+		color: #00f3ff;
+	}
+	#hereLink:hover{
 		cursor: pointer;
 		color: #00f3ff;
 	}
