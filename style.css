@@ -265,6 +265,9 @@ body {
 	grid-row: 3/4;
 	grid-column: 2/5;
 	margin: 0;
+}
+
+.title {
 	color: #010E30;
 	font-size: 5vh;
 	width: 100%;
@@ -347,6 +350,23 @@ body {
 
 #item9 {
 	padding-bottom: 7vh;
+}
+
+#sponsors-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0 11% 10vh 11%;
+}
+
+#sponsors-list img {
+    height: 15vh;
+    padding: 2vh 2.5vh;
+}
+
+#sponsors-title {
+    margin: 0 0 4vh 0;
 }
 
 @media not all and (pointer: coarse) {
@@ -443,6 +463,9 @@ body {
 	.venue-img-div {
 		width: auto;
 	}
+    #sponsors-list img {
+        height: 10vh;
+    }
 }
 
 @media only screen 
