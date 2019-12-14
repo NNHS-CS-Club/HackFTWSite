@@ -339,7 +339,7 @@ body {
 	transition: 0.2s all;
 }
 
-#di-title {
+.di-title {
 	font-size: 5vh;
 	font-weight: 700;
 }
