@@ -441,9 +441,11 @@ body {
 		font-size: 3.7vh;
 	}
 	#di-logo {
-		grid-area: 	4/2/5/3;
-		height: 6vh;
 		position: static;
+		height: 6vh;
+	}
+	#di-logo-container {
+		grid-area: 	4/2/5/3;
 	}
 	#map-container-container {
 		margin-top: 30%;
