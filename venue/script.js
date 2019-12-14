@@ -1,7 +1,7 @@
 function hover(element) {
-    element.setAttribute('src', '../images/hftw-light.png');
+    element.setAttribute('src', '../images/hftw-light.webp');
 }
 
 function unhover(element) {
-    element.setAttribute('src', '../images/hftw-dark.png');
+    element.setAttribute('src', '../images/hftw-dark.webp');
 }
