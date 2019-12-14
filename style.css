@@ -118,7 +118,7 @@ body {
 	font-size: 4.2vh;
 }
 
-#di-logo {
+.di-logo {
 	position: absolute;
 	bottom: 11%;
 	right: 5%;
@@ -169,7 +169,7 @@ body {
 	margin: 0 0 0 11%;
 }
 
-#dark-logo {
+.dark-logo {
 	transition: 0.2s all;
     height: 100%;
 	padding: 1.5vh;
@@ -378,7 +378,7 @@ body {
 		cursor: pointer;
 		color: #00f3ff;
 	}
-	#dark-logo:hover {
+	.dark-logo:hover {
 		background-color: #0065ff !important;
 	}
 	#navbar a:hover {
@@ -440,11 +440,11 @@ body {
 		grid-area: 2/2/3/3;
 		font-size: 3.7vh;
 	}
-	#di-logo {
+	.di-logo {
 		position: static;
 		height: 6vh;
 	}
-	#di-logo-container {
+	.di-logo-container {
 		grid-area: 	4/2/5/3;
 	}
 	#map-container-container {
