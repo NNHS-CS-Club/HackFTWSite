@@ -70,7 +70,7 @@ body {
 #register2 {
 	position: relative;
 	height: 40vh;
-	background-image: url("images/net.jpg");
+	background-image: url("images/net.webp");
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -93,7 +93,7 @@ body {
 #register-footer {
 	position: relative;
 	height: 30vh;
-	background-image: url("images/net.jpg");
+	background-image: url("images/net.webp");
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -220,7 +220,7 @@ body {
 #logo-parent {
 	height: 75vh;
 	padding: 16px;
-	background-image: url("images/parallax1.jpg");
+	background-image: url("images/parallax1.webp");
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: repeat;
