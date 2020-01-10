@@ -191,6 +191,7 @@ body {
 	display: table;
 	background: #0065ff;
 	width: fit-content;
+	width: -moz-fit-content;
 	grid-row: 5/6;
 	grid-column: 2/3;
 	text-decoration: none;
@@ -207,6 +208,7 @@ body {
   display: table;
   background: #0065ff;
   width: fit-content;
+  width: -moz-fit-content;
   grid-area: 3/2/4/3;
   text-decoration: none;
   padding: 2vh 3vh;
@@ -371,6 +373,39 @@ body {
 
 @media not all and (pointer: coarse) {
     #dealer-inspire-directions:hover {
+		cursor: pointer;
+		color: #00f3ff;
+	}
+	#hereLink:hover{
+		cursor: pointer;
+		color: #00f3ff;
+	}
+	.dark-logo:hover {
+		background-color: #0065ff !important;
+	}
+	#navbar a:hover {
+		background-color: #0065ff;;
+		color: white;
+	  }
+	#navbar a.active {
+		background-color: #393e46;
+		color: white;
+	}
+	.register-button-2:hover {
+		font-size: 5vh;
+		cursor : pointer;
+	}
+	.register-button:hover {
+		font-size: 5vh;
+		cursor : pointer;
+	}
+	#view-on-maps:hover {
+		font-size: 5vh;
+	}
+}
+
+@-moz-document url-prefix() {
+	#dealer-inspire-directions:hover {
 		cursor: pointer;
 		color: #00f3ff;
 	}
