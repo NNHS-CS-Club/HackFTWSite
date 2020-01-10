@@ -325,7 +325,7 @@ body {
 
 #map-container-container {
 	padding: 0 11%;
-	margin-top: 10%;
+	margin-top: 15vh;
 	display: flex;
 }
 
@@ -355,20 +355,51 @@ body {
 }
 
 #sponsors-list {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
     padding: 0 11% 10vh 11%;
 }
 
-#sponsors-list img {
-    height: 15vh;
+
+#platinum-sponsors img {
+    height: 25vh;
+    padding: 2vh 2.5vh;
+}
+
+#gold-sponsors img {
+    height: 20vh;
+    padding: 2vh 2.5vh;
+}
+
+#silver-sponsors img {
+    height: 10vh;
     padding: 2vh 2.5vh;
 }
 
 #sponsors-title {
-    margin: 0 0 4vh 0;
+    margin: 0;
+}
+
+#sponsors {
+    margin: 20vh 0 5vh 0;
+    padding: 0 11%;
+}
+
+.sponsors-subtitle {
+    color: #010E30;
+    margin-left: 2vw;
+    font-size: 4vh;
+    width: 100%;
+    font-weight: 700;
+}
+
+#sponsors-title-main {
+    margin: 0;
+}
+
+.sponsor-group {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 @media not all and (pointer: coarse) {
@@ -438,6 +469,18 @@ body {
 }
 
 @media only screen and (orientation : portrait) {
+    #platinum-sponsors img {
+        width: 70vw;
+        object-fit: contain;
+        height: 10vh;
+    }
+    #gold-sponsors img {
+        padding: 1vh 1.5vh;
+        height: 12vh;
+    }
+    #silver-sponsors img {
+        height: 7vh;
+    }
     #break {
 		display: none;
 	}
@@ -482,9 +525,6 @@ body {
 	.di-logo-container {
 		grid-area: 	4/2/5/3;
 	}
-	#map-container-container {
-		margin-top: 30%;
-	}
 	.venue-item {
 		flex: 100%;
 		padding: 5vh 5vw;
@@ -500,9 +540,6 @@ body {
 	.venue-img-div {
 		width: auto;
 	}
-    #sponsors-list img {
-        height: 10vh;
-    }
 }
 
 @media only screen 
