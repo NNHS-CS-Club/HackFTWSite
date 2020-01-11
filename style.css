@@ -410,11 +410,11 @@ body {
 @media not all and (pointer: coarse) {
     #dealer-inspire-directions:hover {
 		cursor: pointer;
-		color: #00f3ff;
+		color: #0065ff;
 	}
 	#hereLink:hover{
 		cursor: pointer;
-		color: #00f3ff;
+		color: #0065ff;
 	}
 	.dark-logo:hover {
 		background-color: #0065ff !important;
@@ -443,11 +443,11 @@ body {
 @-moz-document url-prefix() {
 	#dealer-inspire-directions:hover {
 		cursor: pointer;
-		color: #00f3ff;
+		color: #0065ff;
 	}
 	#hereLink:hover{
 		cursor: pointer;
-		color: #00f3ff;
+		color: #0065ff;
 	}
 	.dark-logo:hover {
 		background-color: #0065ff !important;
