@@ -8,6 +8,11 @@
 	src: url("/fonts/Bio-Sans-Bold.woff") format("woff"),
 		 url("/fonts/Bio-Sans-Bold.woff2") format("woff2");
 }
+
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	margin: 0;
 	font-size: 28px;
