@@ -19,7 +19,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://hackftw.cf" />
   <meta property="og:image" content="http://hackftw.cf/images/embed.jpg" />
-  <meta property="og:image:secure_url" content="https://hackftw.cf/images/embed.jpg" />
+  <meta property="og:image:secure_url" content="https://hackftw.cf/images/webp/embed.jpg" />
   <meta property="og:image:type" content="image/jpeg" />
   <title>Hack For the World</title>
   <link rel="stylesheet" type="text/css" href="style.css">
@@ -31,9 +31,9 @@
 <div id = "navbar" class = "sticky">
   <a id = "contact" title = "Contact us" onclick = "window.open('mailto:jjgosar@stu.naperville203.org', 'mail');event.preventDefault()">Contact</a>
   <a id = "venue" title = "Information on the venue" href = "/venue/">Venue</a>
-	<div id = "hftw" onclick="window.location.href = '/#'">
-  <img class = "dark-logo big" title="HackFTW" onmouseover = "hover(this)" onmouseout="unhover(this)" src="images/hftw-dark.webp">
-  <img class = "dark-logo small" title="HackFTW" src="images/hftw-small.webp">
+  <div id = "hftw" onclick="window.location.href = '/#'">
+  <img class = "dark-logo big" title="HackFTW" onmouseover = "hover(this)" onmouseout="unhover(this)" src="images/png/hftw-dark.png">
+  <img class = "dark-logo small" title="HackFTW" src="images/png/hftw-small.png">
 	</div>
 </div>
 
@@ -63,25 +63,90 @@
     <h id="sponsors-title" class="title">Sponsors</h>
     <p id="platinum" class="sponsors-subtitle">Platinum Sponsors</p>
     <div id="platinum-sponsors" class="sponsor-group">
-        <a href = "https://www.dealerinspire.com/"><img title = "Dealer Inspire" src = "../images/sponsors/dealerinspire-logo.webp"></a>
-        <a href = "http://www.mesonsabika.com/"><img title = "Meson Sabika" src = "../images/sponsors/meson-sabika.webp"></a>
+      <a href = "https://www.dealerinspire.com/">
+        <picture>
+          <source srcset="/images/webp/sponsors/dealerinspire-logo.webp" type="image/webp">
+          <img title = "Dealer Inspire" src = "../images/png/sponsors/dealerinspire-logo.png">
+        </picture>
+      </a>
+      <a href = "http://www.mesonsabika.com/">
+        <picture>
+          <source srcset="/images/webp/sponsors/meson-sabika.webp" type="image/webp">
+          <img title = "Meson Sabika" src = "../images/png/sponsors/meson-sabika.png">
+        </picture>
+      </a>
     </div>
     <p id="gold" class="sponsors-subtitle">Gold Sponsors</p>
     <div id="gold-sponsors" class="sponsor-group">
-    	<a href = "https://repl.it/"><img title = "Repl.it" src = "../images/sponsors/replit.webp"></a>
-        <a href = "https://www.paloaltonetworks.com/"><img title = "Palo Alto Networks" src = "../images/sponsors/paloalto.webp"></a>
-        <a href = "https://www.juniper.net/"><img title = "Juniper Networks" src="../images/sponsors/juniper.webp"></a>
+      <a href = "https://repl.it/">
+        <picture>
+          <source srcset="/images/webp/sponsors/replit.webp" type="image/webp">
+          <img title = "Repl.it" src = "../images/png/sponsors/replit.png">
+        </picture>
+      </a>
+      <a href = "https://www.paloaltonetworks.com/">
+        <picture>
+          <source srcset="/images/webp/sponsors/paloalto.webp" type="image/webp">
+          <img title = "Palo Alto Networks" src = "../images/png/sponsors/paloalto.png">
+        </picture>
+      </a>
+      <a href = "https://www.juniper.net/">
+        <picture>
+          <source srcset="/images/webp/sponsors/juniper.webp" type="image/webp">
+          <img title = "Juniper Networks" src="../images/png/sponsors/juniper.png">
+        </picture>
+      </a>
     </div>
     <p id="silver" class="sponsors-subtitle">Silver Sponsors</p>
     <div id="silver-sponsors" class="sponsor-group">
-        <a href = "https://github.com/"><img title = "GitHub" src = "../images/sponsors/github.webp"></a>
-        <a href = "https://www.cisco.com/"><img title = "Cisco" src = "../images/sponsors/cisco.webp"></a>
-	<a href = "https://balsamiq.com/"><img title = "Balsamiq" src = "../images/sponsors/balsamiq.webp"></a>
-    	<a href = "https://hackclub.com/"><img title = "Hack Club" src = "../images/sponsors/hack-club.webp"></a>
-	<a href = "https://www.nvisia.com/"><img title = "NVISIA" src = "../images/sponsors/nvisia.webp"></a>
-    	<a href = "https://www.stickermule.com/"><img title = "Sticker Mule" src = "../images/sponsors/stickermule.webp"></a>
-	<a href = "https://boxedwaterisbetter.com/"><img title = "Boxed Water" src = "../images/sponsors/boxed-water.webp"></a>
-        <a href = "https://www.naperville203.org/nnhs"><img title = "NNHS Student Government" src = "../images/sponsors/huskie.webp"></a>
+      <a href = "https://github.com/">
+        <picture>
+          <source srcset="/images/webp/sponsors/github.webp" type="image/webp">
+          <img title = "GitHub" src = "../images/png/sponsors/github.png">
+        </picture>
+      </a>
+      <a href = "https://www.cisco.com/">
+        <picture>
+          <source srcset="/images/webp/sponsors/cisco.webp" type="image/webp">
+          <img title = "Cisco" src = "../images/png/sponsors/cisco.png">
+        </picture>
+      </a>
+      <a href = "https://balsamiq.com/">
+        <picture>
+          <source srcset="/images/webp/sponsors/balsamiq.webp" type="image/webp">
+          <img title = "Balsamiq" src = "../images/png/sponsors/balsamiq.png">
+        </picture>
+      </a>
+      <a href = "https://hackclub.com/">
+        <picture>
+          <source srcset="/images/webp/sponsors/hack-club.webp" type="image/webp">
+          <img title = "Hack Club" src = "../images/png/sponsors/hack-club.png">
+        </picture>
+      </a>
+      <a href = "https://www.nvisia.com/">
+        <picture>
+          <source srcset="/images/webp/sponsors/nvisia.webp" type="image/webp">
+          <img title = "NVISIA" src = "../images/png/sponsors/nvisia.png">
+        </picture>
+      </a>
+      <a href = "https://www.stickermule.com/">
+        <picture>
+          <source srcset="/images/webp/sponsors/stickermule.webp" type="image/webp">
+          <img title = "Sticker Mule" src = "../images/png/sponsors/stickermule.png">
+        </picture>
+      </a>
+      <a href = "https://boxedwaterisbetter.com/">
+        <picture>
+          <source srcset="/images/webp/sponsors/boxed-water.webp" type="image/webp">
+          <img title = "Boxed Water" src = "../images/png/sponsors/boxed-water.png">
+        </picture>
+      </a>
+      <a href = "https://www.naperville203.org/nnhs">
+        <picture>
+          <source srcset="/images/webp/sponsors/huskie.webp" type="image/webp">
+          <img title = "NNHS Student Government" src = "../images/png/sponsors/huskie.png">
+        </picture>
+      </a>
     </div>
 </div>
 

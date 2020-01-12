@@ -75,7 +75,6 @@ body {
 #register2 {
 	position: relative;
 	height: 40vh;
-	background-image: url("images/net.webp");
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -98,7 +97,6 @@ body {
 #register-footer {
 	position: relative;
 	height: 30vh;
-	background-image: url("images/net.webp");
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -227,7 +225,6 @@ body {
 #logo-parent {
 	height: 75vh;
 	padding: 16px;
-	background-image: url("images/parallax1.webp");
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: repeat;
@@ -306,10 +303,14 @@ body {
 	margin: 0.5vw;
 }
 
+#venue-map-container {
+	padding: 2.5vh 1.5vw 1.5vh 1.5vw;
+}
+
 .venue-img {
 	padding: 0 !important;
 	width: 39vw;
-	object-fit: contain;
+	object-fit: cover;
 	max-width: 100%;
 	max-height: 100%;
 	height: auto;
@@ -365,7 +366,9 @@ body {
 
 
 #platinum-sponsors img {
-    height: 25vh;
+	height: 25vh;
+	width: 70vw;
+	object-fit: contain;
     padding: 2vh 2.5vh;
 }
 
