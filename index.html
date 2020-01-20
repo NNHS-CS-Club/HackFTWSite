@@ -41,7 +41,7 @@
   <div id = "logo-div">
   <h id = "logo-caption">What can you make in 12 hours <br id = "break">that could change the world?</h>
   <p id = "place-and-date">February 1st, 2020, 8am-8pm @ <a id = "dealer-inspire-directions" href = "https://www.google.com/maps/place/Dealer+Inspire/@41.7757912,-88.2021895,18.33z/data=!4m5!3m4!1s0x880e57b8b709e617:0x632754e78b2bfb51!8m2!3d41.7756079!4d-88.2011456">Dealer Inspire</a>, Naperville</p>
-  <a id = "eventbrite-widget-modal-trigger-1" title = "Register for HackFTW" class = "register-button">Register Now »</a>
+  <a id = "eventbrite-widget-modal-trigger-1" title = "Register for HackFTW" class = "register-button closed">Registration is closed</a> <!-- Register Now » | Registration is closed-->
   </div>
 </div>
 
@@ -152,8 +152,8 @@
 
 <div id="register2">
   <div id="register2-shade">
-    <h id="what-are-you-waiting-for">What are you waiting for?</h>
-    <a id="eventbrite-widget-modal-trigger-2" title = "Register for HackFTW" class="register-button-2">Register Now »</a>
+    <h id="what-are-you-waiting-for">Thanks to all participants!</h> <!-- What are you waiting for? | Thanks to all participants!-->
+    <a id="eventbrite-widget-modal-trigger-2" title = "Register for HackFTW" class="register-button-2 closed">Registration is closed</a> <!-- Register Now » | Registration is closed-->
   </div>
 </div>
 
@@ -164,7 +164,7 @@
 <!-- You can customize this button any way you like -->
 <noscript></a>Buy Tickets on Eventbrite</noscript>
 		
-<script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
+<!-- <script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
 
 <script type = "text/javascript">
 var exampleCallback = function() {
@@ -178,7 +178,16 @@ window.EBWidgets.createWidget({
     modalTriggerElementId: 'eventbrite-widget-modal-trigger-1',
     onOrderComplete: exampleCallback
 });
-</script>
+
+window.EBWidgets.createWidget({
+    widgetType: 'checkout',
+    eventId: '79974063577',
+    modal: true,
+    modalTriggerElementId: 'eventbrite-widget-modal-trigger-2',
+    onOrderComplete: exampleCallback
+});
+</script> -->
+
 <script src="script.js"></script>
 </body>
 </html>

@@ -191,35 +191,13 @@ body {
 }
 
 .register-button {
-	display: table;
-	background: #0065ff;
-	width: fit-content;
-	width: -moz-fit-content;
 	grid-row: 5/6;
 	grid-column: 2/3;
-	text-decoration: none;
-	padding: 2vh 3vh;
-	font-size: 4vh;
-	border-radius: 40px;
-	transition: 0.2s all;
-	color: white;
-	font-family: 'Chakra Petch', sans-serif;
 }
 
 
 .register-button-2 {
-  display: table;
-  background: #0065ff;
-  width: fit-content;
-  width: -moz-fit-content;
   grid-area: 3/2/4/3;
-  text-decoration: none;
-  padding: 2vh 3vh;
-  font-size: 4vh;
-  border-radius: 40px;
-  transition: 0.2s all;
-  color: white;
-  font-family: 'Chakra Petch', sans-serif;
 }
 
 #logo-parent {
@@ -410,6 +388,36 @@ body {
     justify-content: space-around;
 }
 
+#register-button-2.open {
+	text-align: center;
+}
+
+.closed {
+	border: 0.3vh solid white;
+	padding: 2vh 3vh;
+	font-size: 4vh;
+	color: white;
+	font-family: 'Chakra Petch', sans-serif;
+	border-radius: 40px;
+	width: fit-content;
+	width: -moz-fit-content;
+	text-decoration: none;
+}
+
+.open {
+	display: table;
+	background: #0065ff;
+	width: fit-content;
+	width: -moz-fit-content;
+	text-decoration: none;
+	padding: 2vh 3vh;
+	font-size: 4vh;
+	border-radius: 40px;
+	transition: 0.2s all;
+	color: white;
+	font-family: 'Chakra Petch', sans-serif;
+}
+
 @media not all and (pointer: coarse) {
     #dealer-inspire-directions:hover {
 		cursor: pointer;
@@ -430,11 +438,11 @@ body {
 		background-color: #393e46;
 		color: white;
 	}
-	.register-button-2:hover {
+	.register-button-2.open:hover {
 		font-size: 5vh;
 		cursor : pointer;
 	}
-	.register-button:hover {
+	.register-button.open:hover {
 		font-size: 5vh;
 		cursor : pointer;
 	}
@@ -548,6 +556,16 @@ body {
 	.venue-img-div {
 		width: auto;
 	}
+	.register-button-2.closed {
+		text-align: center;
+		height: fit-content;
+		height: -moz-fit-content;
+	}
+	.register-button.closed {
+		text-align: center;
+		height: fit-content;
+		height: -moz-fit-content;
+	}
 }
 
 @media only screen 
@@ -579,5 +597,12 @@ and (orientation : portrait) {
 	}
 	#item9-br {
 		display: block !important;
+	}
+	.register-button-2.closed {
+		padding: 1vh 2vh;
+		font-size: 3vh;
+	}
+	.register-button.closed {
+		padding: 1vh 2vh;
 	}
 }
