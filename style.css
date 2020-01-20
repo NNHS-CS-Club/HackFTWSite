@@ -94,15 +94,6 @@ body {
 
 }
 
-#register-footer {
-	position: relative;
-	height: 30vh;
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-
 #register-footer-shade {
 	color: white;
 	grid-template: 25% 20% 23% 22% / 11% 66% 11%;

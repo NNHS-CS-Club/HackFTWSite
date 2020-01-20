@@ -19,7 +19,6 @@ window.onload = () => {
   console.log(webp)
   document.getElementById("logo-parent").style.backgroundImage = "url('images/" + webp + "/parallax1." + webp + "')"
   document.getElementById("register2").style.backgroundImage = "url('images/" + webp + "/net." + webp + "')"
-  document.getElementById("register-footer").style.backgroundImage = "url('images/" + webp + "/net." + webp + "')"
 }
 
 function hover(element) {
