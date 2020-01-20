@@ -32,8 +32,14 @@
   <a id = "contact" title = "Contact us" onclick = "window.open('mailto:jjgosar@stu.naperville203.org', 'mail');event.preventDefault()">Contact</a>
   <a id = "venue" title = "Information on the venue" href = "/venue/">Venue</a>
   <div id = "hftw" onclick="window.location.href = '/#'">
-  <img class = "dark-logo big" title="HackFTW" onmouseover = "hover(this)" onmouseout="unhover(this)" src="images/png/hftw-dark.png">
-  <img class = "dark-logo small" title="HackFTW" src="images/png/hftw-small.png">
+    <picture>
+      <source srcset="/images/webp/hftw-dark.webp" type="image/webp">
+      <img class="dark-logo big" onmouseover="hover(this)" onmouseout="unhover(this)" src="/images/png/hftw-dark.png">
+    </picture>
+    <picture>
+      <source srcset="images/webp/hftw-small.webp" type="image/webp">
+      <img class = "dark-logo small" title="HackFTW" src="images/png/hftw-small.png">
+    </picture>
 	</div>
 </div>
 

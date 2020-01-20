@@ -21,9 +21,9 @@ function canUseWebP() {
   }
   
   function hover(element) {
-    element.setAttribute('src', '../images/png/hftw-light.png');
+    element.setAttribute('src', '../images/' + webp + '/hftw-light.' + webp);
   }
   
   function unhover(element) {
-    element.setAttribute('src', '../images/png/hftw-dark.png');
+    element.setAttribute('src', '../images/' + webp + '/hftw-dark.' + webp);
   }
