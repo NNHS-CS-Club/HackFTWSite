@@ -152,7 +152,7 @@ body {
 	text-align: center;
 }
 
-#venue, #contact {
+#venue, #contact, #slack {
 	float: right;
 	opacity: 1;
 }
@@ -174,7 +174,7 @@ body {
   display: block;
   color: #0065ff;;
   text-align: center;
-  padding: 3.5vh;
+  padding: 3.5vh 2vw;
   text-decoration: none;
   font-size: 3vh;
   transition: 0.2s all;
@@ -563,7 +563,7 @@ body {
 and (min-device-width : 360px) 
 and (orientation : portrait) {
 	#navbar a {
-		padding: 3.5vh 2vh 3.5vh 2vh;
+		padding: 3.5vh 2vw 3.5vh 2vw;
 	}
 	#logo-div {
 		grid-template: 30% 20% 8% 15% 10% / 11% 78% 11%;
@@ -595,5 +595,8 @@ and (orientation : portrait) {
 	}
 	.register-button.closed {
 		padding: 1vh 2vh;
+	}
+	#hftw {
+		margin: 0 0 0 5%;
 	}
 }
