@@ -333,7 +333,6 @@ body {
     padding: 0 11% 10vh 11%;
 }
 
-
 #platinum-sponsors img {
 	height: 25vh;
 	width: 70vw;
@@ -342,7 +341,9 @@ body {
 }
 
 #gold-sponsors img {
+	max-width: 70vw;
     height: 20vh;
+	object-fit: contain;
     padding: 2vh 2.5vh;
 }
 
