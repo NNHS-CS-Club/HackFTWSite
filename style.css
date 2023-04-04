@@ -1,608 +1,322 @@
-@font-face {
-	font-family: "BioSans";
-	src: url("/fonts/Bio-Sans.woff") format("woff"),
-		 url("/fonts/Bio-Sans.woff2") format("woff2");
-}
-@font-face {
-	font-family: "BioSansBold";
-	src: url("/fonts/Bio-Sans-Bold.woff") format("woff"),
-		 url("/fonts/Bio-Sans-Bold.woff2") format("woff2");
-}
-
-html {
-	scroll-behavior: smooth;
-}
-
-body {
-	margin: 0;
-	font-size: 28px;
-	font-family: 'BioSans', sans-serif;
-	transition: 0.2s all;
-	width: 100%;
-	overflow-x: hidden;
-}
-
-#hereLink {
-	cursor: pointer;
-	text-decoration: underline;
-}
-
-#dealer-inspire-directions {
-	cursor: pointer;
+/* Navigation */
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+	background-color: #221307;
 	color: #fff;
-    transition: 0.2s all;
-}
+  }
+  
+  .logo img {
+	height: 60px;
+  }
+  
+  .nav-links {
+	list-style: none;
+	display: flex;
+  }
+  
+  .nav-links li {
+	padding: 0px 20px;
+  }
+  
+  .nav-links a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 1.5em;
+  }
 
-#formFrame {
-	position: absolute;
-	background: #393e46;
-	height: 1350px;
-	width: 40vw;
-    min-width: 350px;
-	left: 50%;
-	top: 100%;
-	-webkit-transform: translateX(-50%) translateY(-50%);
-	-moz-transform: translateX(-50%) translateY(-50%);
-	transform: translateX(-50%) translateY(-50%);
-}
+	nav .logo img {
+	width: 350px; 
+	height: auto; 
+  }
+  
+  .nav-links a:hover {
+	color: #00ff94;
+  }
 
-#promo-paragraph {
-	color: #010E30;
+  body {
 	margin: 0;
-	font-size: 3.5vh;
-	padding: 5vh 0;
-}
-
-#navbar {
-  background-color: #fff;
-  z-index: 1;
-  height: 11vh;
-  border-bottom: 0.5vh solid #0065ff;
-}
-
-.fakehr {
-	position: absolute;
-	left: 50%;
-	top: 83%;
-	-webkit-transform: translateX(-50%) translateY(-50%);
-	-moz-transform: translateX(-50%) translateY(-50%);
-	transform: translateX(-50%) translateY(-50%);
-	background: white;
-	height: 3px;
-	width: 90%;
-}
-
-#register2 {
-	position: relative;
-	height: 35vh;
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
+  }
+  
+  /* Main */
+  .main {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #3b3b3b;
+	background-image: url("images/rainforest2.jpg");
 	background-size: cover;
-}
-
-#register2-shade {
-	color: white;
-	grid-template: 25% 30% 23% 22% / 11% 67% 11%;
-    display: grid;
-	background-color: rgba(1, 14, 48, 0.7);
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-
-}
-
-#register-footer-shade {
-	color: white;
-	grid-template: 25% 20% 23% 22% / 11% 66% 11%;
-    display: grid;
-	background-color: rgba(1, 14, 48, 0.7);
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-
-}
-
-#what-are-you-waiting-for {
-	grid-area: 2/2/3/3;
-	font-size: 4.2vh;
-}
-
-.di-logo {
-	position: absolute;
-	bottom: 11%;
-	right: 5%;
-	height: 13vh;
-}
-
-#description-faq {
-	display: flex;
-	flex-wrap: wrap;
-	padding: 0 11%
-}
-
-#venue-container {
-	display: flex;
-	flex-wrap: wrap;
-	padding: 0 11%;
-	margin-bottom: 4vh;
-}
-
-#register-info {
-	line-height: 40vh;
-    text-align: center;
-	color: white;
-	background: #0065ff;
-	border-radius: 10px;
-	padding: 2vh 3vh;
-	font-size: 5vh;
-}
-
-#item9-br {
-	display: none !important;
-}
-
-#register-container {
-	height: 70vh;
-	width: 100%;
+	background-position: center;
+	color: #fff;
 	text-align: center;
-}
+	user-select: none;
+  }
 
-#venue, #contact, #slack {
-	float: right;
-	opacity: 1;
-}
+  .main h1 {
+	font-size: 4em;
+	margin-bottom: 20px;
+	text-shadow: 2px 2px #000;
+  }
+  
+  .event-info {
+	background-color: #221307;
+	padding: 20px;
+	border-radius: 10px;
+  }
+  
+  .event-info h2 {
+	font-size: 2em;
+	font-weight: 500;
 
-#hftw {
-	width: 0;
-	height: 75%;
-	margin: 0 0 0 11%;
-}
+	margin-bottom: 20px;
+  }
+  
+  .event-info p {
+	font-size: 1.2em;
+	margin-bottom: 20px;
+  }
 
-.dark-logo {
-	transition: 0.2s all;
-    height: 100%;
-	padding: 1.5vh;
-	cursor: pointer;
-}
+  .event-info a {
+	display: block;
+	width: fit-content;
+	margin: 0 auto;
+  }
 
-#navbar a {
-  display: block;
-  color: #0065ff;;
-  text-align: center;
-  padding: 3.5vh 2vw;
-  text-decoration: none;
-  font-size: 3vh;
-  transition: 0.2s all;
+  a[href="registration-form-url"] {
+	display: inline-block;
+	background-color: #1B5E20;
+	color: white;
+	font-size: 1.5em;
+	padding: 10px 30px;
+	border-radius: 25px;
+	text-decoration: none;
+	max-width: 4000px;
+  }
+  
+  
+  .event-info a {
+	display: block;
+	background-color: #1B5E20;
+	color: #fff;
+	text-decoration: none;
+	font-size: 1.2em;
+	padding: 10px 20px;
+	border-radius: 5px;
+  }
+  
+  .event-info a:hover {
+	background-color: #009058;
+  }
+  
+  .scroll-down {
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+  }
+  
+  .scroll-down img {
+	width: 350px;
+	animation: scroll-down 2s infinite;
+  }
+  
+  @keyframes scroll-down {
+	0% {
+	  transform: translateY(0);
+	}
+	50% {
+	  transform: translateY(20px);
+	}
+	100% {
+	  transform: translateY(0);
+	}
+  }
+  
+  /* FAQ */
+  .faq {
+	padding: 80px 0px;
+	background-color: #1B5E20;
+	text-align: center;
+  }
+  
+  .faq h2 {
+	font-size: 2.5em;
+	margin-bottom: 20px;
+	color: #fff;
+  }
+  
+  .faq-item {
+	margin-bottom: 40px;
+	max-width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+  }
+  
+  .faq-item h3 {
+	font-size: 1.8em;
+	margin-bottom: 10px;
+	color: #fff;
+  }
+  
+  .faq-item p {
+	font-size: 1.2em;
+	margin-bottom: 10px;
+	color: #fff;
+  }
+
+  /* Footer */
+footer {
+	background-color: #432B0E;
+	color: #ffffff;
+	padding: 20px;
+	text-align: center;
+  }
+  
+  /* Venue */
+  section.venue {
+	background-color: #1B5E20;
+	padding: 25px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	color: #fff;
+	user-select: none;
+  }
+
+  .center-heading {
+	text-align: center;
+	background-color: #1B5E20;
+  }
+  
+  section.venue h2 {
+	font-size: 36px;
+	margin-bottom: 30px;
+	background-color: #1B5E20;
+  }
+
+  section.venue h3 {
+	background-color: #1B5E20;
+  }
+
+
+  section.venue h1 {
+	font-size: 46px;
+	margin-bottom: 15px;
+	background-color: #1B5E20;
+  }
+  
+  section.venue p {
+	font-size: 18px;
+	margin-bottom: 30px;
+	background-color: #1B5E20;
+	text-align: center;
+  }
+  
+  section.venue .venue-description {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #1B5E20;
+	margin-bottom: 30px;
+  }
+  
+  section.venue .venue-description img {
+	max-width: 100%;
+	background-color: #1B5E20;
+  }
+  
+  section.venue .parking-info {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #1B5E20;
+  }
+  
+  section.venue .parking-info img {
+	max-width: 50%;
+	background-color: #1B5E20;
+  }
+  
+  section.venue .map {
+	width: 100%;
+	height: 400px;
+	margin-bottom: 30px;
+	background-color: #1B5E20;
+
+  }
+
+  .venue-images {
+	margin: 30;
+	padding: 0;
+	text-align: center;
+	color: #fff;
+	background-color: #1B5E20;
+  }
+  
+  .venue-images h2 {
+	font-size: 36px;
+	margin-bottom: 30px;
+	background-color: #1B5E20;
+
+  }
+  
+  .image-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 20px;
+	background-color: #1B5E20;
+  }
+  
+  .image-grid img {
+	width: 100%;
+	height: auto;
+	border-radius: 10px;
+	box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+	background-color: #1B5E20;
+  }
+  
+  
+  .map-container {
+	border: 2px solid #ddd;
+	border-radius: 8px;
+	margin: 1em auto;
+	max-width: 800px;
+	background-color: #1B5E20;
+	overflow: hidden;
+  }
+
+  .hotel-info{
+  	background-color: #1B5E20;
+  	margin: 0;
+	padding: 0;
+
+  }
+
+  #faq-button,
+#venue-button,
+#contact-button,
+#discord-button {
+  background-color: #1B5E20;
+  color: #FFF;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 20px 30px;
+  border: none;
+  border-radius: 10px;
   cursor: pointer;
 }
 
-.register-button {
-	grid-row: 5/6;
-	grid-column: 2/3;
+#faq-button:hover,
+#venue-button:hover,
+#contact-button:hover,
+#discord-button:hover {
+  background-color: #4CAF50;
 }
 
 
-.register-button-2 {
-  grid-area: 3/2/4/3;
-}
 
-#logo-parent {
-	height: 75vh;
-	padding: 16px;
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: repeat;
-	background-size: cover;
-	position: relative;
-	color: white;
-}
-
-#logo-div {
-	display: grid;
-	grid-template: 35% 20% 6% 9% 12% / 11% 78% 11%;
-    background-color: rgba(1, 14, 48, 0.7);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-	height: 100%;
-}
-
-#logo-caption {
-	grid-row: 2/3;
-	grid-column: 2/3;
-	font-size: 5.5vh;
-}
-
-#place-and-date {
-	grid-row: 3/4;
-	grid-column: 2/3;
-	font-size: 4vh;
-	margin: 0;
-}
-
-.small {
-	display: none !important;
-}
-
-.big {
-	display: block !important;
-}
-
-#faq {
-	grid-row: 3/4;
-	grid-column: 2/5;
-	margin: 0;
-}
-
-.title {
-	color: #010E30;
-	font-size: 5vh;
-	width: 100%;
-	font-weight: 700;
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-.faq-item {
-	color: #010E30;
-	font-size: 3vh;
-	padding: 2.5vh 0;
-	flex: 47%;
-	border: 1vw solid transparent;
-}
-
-.venue-item {
-	background: #0065ff;
-	border-radius: 12px;
-	width:100%;
-	flex: 40%;
-	color: white;
-	font-size: 4vh;
-	padding: 2.5vh 1.5vw;
-	margin: 0.5vw;
-}
-
-#venue-map-container {
-	padding: 2.5vh 1.5vw 1.5vh 1.5vw;
-}
-
-.venue-img {
-	padding: 0 !important;
-	width: 39vw;
-	object-fit: cover;
-	max-width: 100%;
-	max-height: 100%;
-	height: auto;
-}
-
-.venue-img-div {
-	object-fit: contain;
-	max-height: 100%;
-	height: auto;
-}
-
-#map {
-	border: 0;
-    width: 100%;
-	height: 58vh;
-	border-radius: 12px;
-}
-
-#map-container-container {
-	padding: 0 11%;
-	margin-top: 15vh;
-	display: flex;
-}
-
-#view-on-maps {
-	background-color: white;
-	color: #0065ff;
-	border-radius: 40px;
-	border: none;
-	padding: 2vh 3vh;
-	font-size: 4vh;
-	font-family: "BioSans";
-	text-decoration: none;
-	transition: 0.2s all;
-}
-
-.di-title {
-	font-size: 5vh;
-	font-weight: 700;
-}
-
-.faq-item strong {
-	line-height: 250%;
-}
-
-#item9 {
-	padding-bottom: 7vh;
-}
-
-#sponsors-list {
-    padding: 0 11% 10vh 11%;
-}
-
-#platinum-sponsors img {
-	height: 25vh;
-	width: 70vw;
-	object-fit: contain;
-    padding: 2vh 2.5vh;
-}
-	
-#gold-sponsors img {
-	max-width: 70vw;
-    height: 20vh;
-	object-fit: contain;
-    padding: 2vh 2.5vh;
-}
-
-#silver-sponsors img {
-    height: 10vh;
-    padding: 2vh 2.5vh;
-}
-
-#black-line {
-	height: 12vh !important;
-}
-
-#sponsors-title {
-    margin: 0;
-}
-
-#sponsors {
-    margin: 20vh 0 5vh 0;
-    padding: 0 11%;
-}
-
-.sponsors-subtitle {
-    color: #010E30;
-    margin-left: 2vw;
-    font-size: 4vh;
-    width: 100%;
-    font-weight: 700;
-}
-
-#sponsors-title-main {
-    margin: 0;
-}
-
-.sponsor-group {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-#register-button-2.open {
-	text-align: center;
-}
-
-.closed {
-	border: 0.3vh solid white;
-	padding: 2vh 3vh;
-	font-size: 4vh;
-	color: white;
-	font-family: 'Chakra Petch', sans-serif;
-	border-radius: 40px;
-	width: fit-content;
-	width: -moz-fit-content;
-	text-decoration: none;
-}
-
-.open {
-	display: table;
-	color: #0065ff;
-	border: 6px solid #0065ff;
-	background-color: white;
-	width: fit-content;
-	width: -moz-fit-content;
-	text-decoration: none;
-	padding: 2vh 3vh;
-	font-size: 4vh;
-	border-radius: 40px;
-	transition: 0.2s all;
-	font-family: 'Chakra Petch', sans-serif;
-}
-
-@media not all and (pointer: coarse) {
-    #dealer-inspire-directions:hover {
-		cursor: pointer;
-		color: #0065ff;
-	}
-	#hereLink:hover{
-		cursor: pointer;
-		color: #0065ff;
-	}
-	.dark-logo:hover {
-		background-color: #0065ff !important;
-	}
-	#navbar a:hover {
-		background-color: #0065ff;;
-		color: white;
-	  }
-	#navbar a.active {
-		background-color: #393e46;
-		color: white;
-	}
-	.register-button-2.open:hover {
-		font-size: 5vh;
-		cursor : pointer;
-	}
-	.register-button.open:hover {
-		font-size: 5vh;
-		cursor : pointer;
-	}
-	#view-on-maps:hover {
-		font-size: 5vh;
-	}
-}
-
-@-moz-document url-prefix() {
-	#dealer-inspire-directions:hover {
-		cursor: pointer;
-		color: #0065ff;
-	}
-	#hereLink:hover{
-		cursor: pointer;
-		color: #0065ff;
-	}
-	.dark-logo:hover {
-		background-color: #0065ff !important;
-	}
-	#navbar a:hover {
-		background-color: #0065ff;;
-		color: white;
-	  }
-	#navbar a.active {
-		background-color: #393e46;
-		color: white;
-	}
-	.register-button-2:hover {
-		font-size: 5vh;
-		cursor : pointer;
-	}
-	.register-button:hover {
-		font-size: 5vh;
-		cursor : pointer;
-	}
-	#view-on-maps:hover {
-		font-size: 5vh;
-	}
-}
-
-@media only screen and (orientation : portrait) {
-    #platinum-sponsors img {
-        width: 70vw;
-        object-fit: contain;
-        height: 10vh;
-    }
-    #gold-sponsors img {
-        padding: 1vh 1.5vh;
-        height: 12vh;
-    }
-    #silver-sponsors img {
-        height: 7vh;
-    }
-    #break {
-		display: none;
-	}
-	#logo-caption {
-		font-size: 4vh;
-	}
-	#place-and-date {
-		font-size: 3vh;
-	}
-	#logo-div {
-		grid-template: 35% 22% 6% 9% 10% / 11% 78% 11%;
-	}
-	#description-faq {
-		flex-direction: column;
-	}
-	#promo-paragraph {
-		font-size: 3vh;
-		padding: 3vh 0;
-	}
-	.faq-item {
-		padding: 1.5vh 0;
-		border: none;
-	}
-	.small {
-		display: block !important;
-	}
-	.big {
-		display: none !important;
-	}
-	#register2-shade {
-		grid-template: 17% 21% 32% 22% / 11% 78% 11%;
-		justify-items: center;
-	}
-	#what-are-you-waiting-for {
-		grid-area: 2/2/3/3;
-		font-size: 3.7vh;
-	}
-	.di-logo {
-		position: static;
-		height: 6vh;
-	}
-	.di-logo-container {
-		grid-area: 	4/2/5/3;
-	}
-	.venue-item {
-		flex: 100%;
-		padding: 5vh 5vw;
-		text-align: center;
-		margin: 3vw 0;
-	}
-	#view-on-maps {
-		font-size: 2.5vh;
-	}
-	.venue-img {
-		width: auto;
-	}
-	.venue-img-div {
-		width: auto;
-	}
-	.register-button-2.closed {
-		text-align: center;
-		height: fit-content;
-		height: -moz-fit-content;
-	}
-	.register-button.closed {
-		text-align: center;
-		height: fit-content;
-		height: -moz-fit-content;
-	}
-}
-
-@media only screen 
-and (min-device-width : 360px) 
-and (orientation : portrait) {
-	#navbar a {
-		padding: 3.5vh 2vw 3.5vh 2vw;
-	}
-	#logo-div {
-		grid-template: 30% 20% 8% 15% 10% / 11% 78% 11%;
-	}
-	#logo-caption {
-		font-size: 3.6vh;
-	}
-	.register-button {
-		font-size: 3vh;
-	}
-	#promo-paragraph {
-		font-size: 2.5vh;
-	}
-	#what-are-you-waiting-for {
-		font-size: 3vh;
-	}
-	.faq-item {
-		font-size: 2.75vh;
-	}
-	#item9-strong1 {
-		line-height: normal;
-	}
-	#item9-br {
-		display: block !important;
-	}
-	.register-button-2.closed {
-		padding: 1vh 2vh;
-		font-size: 3vh;
-	}
-	.register-button.closed {
-		padding: 1vh 2vh;
-	}
-	#hftw {
-		margin: 0 0 0 5%;
-	}
-}
