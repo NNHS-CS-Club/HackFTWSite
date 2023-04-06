@@ -1,30 +1,33 @@
-function canUseWebP() {
-  var elem = document.createElement('canvas');
+// Change color of button on hover
 
-  if (!!(elem.getContext && elem.getContext('2d'))) {
-      // was able or not to get WebP representation
-      return elem.toDataURL('image/webp').indexOf('data:image/webp') == 0;
-  }
+const buttons = document.querySelectorAll('.button');
 
-  // very old browser like IE 8, canvas not supported
-  return false;
-}
- 
-var webp = "png";
+buttons.forEach(button => {
+  button.addEventListener('mouseenter', () => {
+    button.style.backgroundColor = '#80c49a';
+    button.style.color = '#fff';
+  });
+  
+  button.addEventListener('mouseleave', () => {
+    button.style.backgroundColor = '#fff';
+    button.style.color = '#80c49a';
+  });
+});
 
-window.onload = () => {
-  if (canUseWebP()) {
-    webp = "webp";
-  }
-  console.log(webp)
-  document.getElementById("logo-parent").style.backgroundImage = "url('images/" + webp + "/parallax1." + webp + "')"
-  document.getElementById("register2").style.backgroundImage = "url('images/" + webp + "/net." + webp + "')"
-}
+// Smooth scrolling animation
 
-function hover(element) {
-  element.setAttribute('src', 'images/' + webp + '/hftw-dark.' + webp);
-}
+const links = document.querySelectorAll('nav a');
 
-function unhover(element) {
-  element.setAttribute('src', 'images/' + webp + '/hftw-light.' + webp);
-}
+links.forEach(link => {
+  link.addEventListener('click', event => {
+    event.preventDefault();
+
+    const href = link.getAttribute('href');
+    const offsetTop = document.querySelector(href).offsetTop;
+
+    scroll({
+      top: offsetTop,
+      behavior: 'smooth'
+    });
+  });
+});
