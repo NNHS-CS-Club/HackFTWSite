@@ -271,14 +271,18 @@ body {
 
 .faq-item {
 	color: #ffffff;
+	border-radius: 12px;
+	width: 50%;
+	flex: 40%;
 	font-size: 3vh;
-	padding: 2.5vh 0;
-	flex: 47%;
+	padding: 2.5vh 1.5vw;
+	margin: 0.5vw;
 	border: 1vw solid transparent;
+	background: rgb(0, 101, 255, .2);
 }
 
 .venue-item {
-	background: #0065ff;
+	background: rgb(0, 101, 255, 0.2);
 	border-radius: 12px;
 	width:100%;
 	flex: 40%;

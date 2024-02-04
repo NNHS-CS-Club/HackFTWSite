@@ -30,7 +30,7 @@ const makeStars = count => {
   return out;
 };
 
-let stars = makeStars(10000);
+let stars = makeStars(11000);
 
 const clear = () => {
   c.fillStyle = "black";
@@ -41,7 +41,7 @@ const putPixel = (x, y, brightness) => {
   const intensity = brightness * 255;
   const rgb = "rgb(" + intensity + "," + intensity + "," + intensity + ")";
   c.fillStyle = rgb;
-  c.fillRect(x, y, 1, 1);
+  c.fillRect(x, y, 1.5, 1.5);
 };
 
 const moveStars = distance => {
@@ -65,7 +65,7 @@ const tick = time => {
   let elapsed = time - prevTime;
   prevTime = time;
 
-  moveStars(elapsed * 0.3);       
+  moveStars(elapsed * 0.2);       
 
   clear();
 
