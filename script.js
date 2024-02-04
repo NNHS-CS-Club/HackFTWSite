@@ -17,7 +17,7 @@ window.onload = () => {
     webp = "webp";
   }
   console.log(webp)
-  document.getElementById("logo-parent").style.backgroundImage = "url('images/" + webp + "/parallax1." + webp + "')"
+  document.getElementById("logo-parent").style.backgroundImage = "url('images/" + webp + "/space-background." + webp + "')"
   document.getElementById("register2").style.backgroundImage = "url('images/" + webp + "/net." + webp + "')"
 }
 
