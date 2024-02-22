@@ -241,6 +241,13 @@ body {
 	font-size: 4vh;
 	margin: 0;
 }
+#registration-deadline {
+	grid-row: 4/4;
+	grid-column: 2/3;
+	font-size: 4vh;
+	margin: 0;
+	color: #8c0808;
+}
 
 .small {
 	display: none !important;
