@@ -640,3 +640,55 @@ and (orientation : portrait) {
 		margin: 0 0 0 5%;
 	}
 }
+#sponsors-bar {
+	background-color: #f5f5f5;
+	padding: 4vh 11%;
+	text-align: center;
+}
+
+.sponsors-bar-title {
+	color: #010E30;
+	font-size: 3.5vh;
+	margin: 0 0 3vh 0;
+	font-weight: 700;
+}
+
+.sponsors-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 3vw;
+}
+
+.sponsor-logo {
+	height: 10vh;
+	max-width: 25vw;
+	object-fit: contain;
+	transition: 0.2s all;
+}
+
+.sponsor-logo:hover {
+	transform: scale(1.05);
+	opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+	#sponsors-bar {
+		padding: 3vh 5%;
+	}
+	
+	.sponsors-bar-title {
+		font-size: 2.5vh;
+		margin-bottom: 2vh;
+	}
+	
+	.sponsors-container {
+		gap: 2vw;
+	}
+	
+	.sponsor-logo {
+		height: 8vh;
+		max-width: 35vw;
+	}
+}
