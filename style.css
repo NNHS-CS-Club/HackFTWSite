@@ -330,7 +330,7 @@ body {
 }
 
 #sponsors-list {
-    padding: 0 11% 10vh 11%;
+	padding: 0 11% 2vh 11%;
 }
 
 #platinum-sponsors img {
@@ -361,7 +361,7 @@ body {
 }
 
 #sponsors {
-    margin: 20vh 0 5vh 0;
+    margin: 40vh 0 5vh 0;
     padding: 0 11%;
 }
 
@@ -382,6 +382,40 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+}
+
+#sponsors-bar {
+	background-color: #f5f5f5;
+	padding: 1.5vh 11% 4vh;
+	margin-top: 0;
+	text-align: center;
+}
+
+.sponsors-bar-title {
+	color: #010E30;
+	font-size: 3.5vh;
+	margin: 0 0 3vh 0;
+	font-weight: 700;
+}
+
+.sponsors-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 3vw;
+}
+
+.sponsor-logo {
+	height: 10vh;
+	max-width: 25vw;
+	object-fit: contain;
+	transition: 0.2s all;
+}
+
+.sponsor-logo:hover {
+	transform: scale(1.05);
+	opacity: 0.85;
 }
 
 #register-button-2.open {
