@@ -1,0 +1,7 @@
+# Windows / macOS shell droppings
+desktop.ini
+Thumbs.db
+.DS_Store
+
+# Editor
+.vscode/

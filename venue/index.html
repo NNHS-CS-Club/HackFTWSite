@@ -1,120 +1,145 @@
 <!DOCTYPE html>
-<html lang=en>
+<html lang="en">
 <head>
-  <link rel="apple-touch-icon" sizes="180x180" href="../icons/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="../icons/favicon-16x16.png">
-  <link rel="manifest" href="../icons/site.webmanifest">
-  <link rel="mask-icon" href="../icons/safari-pinned-tab.svg" color="#0065ff">
-  <link rel="shortcut icon" href="../icons/favicon.ico">
-  <meta name="msapplication-TileColor" content="#0065ff">
-  <meta name="msapplication-config" content="../icons/browserconfig.xml">
-  <meta name="theme-color" content="#ffffff">
-  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
-  <meta name="description" content="The official site of the HackFTW hackathon for high schoolers held in Naperville, IL, aimed at solving the UN global goals." />
-  <meta name="keywords" content="hackftw,naperville hackathon,chicago hackathon,hackathon,global goals" />
-  <meta name="robots" content="index,follow" />
-  <meta property="og:title" content="HackFTW" />
-  <meta property="og:description" content="The official site of the HackFTW hackathon for high schoolers held in Naperville, IL, aimed at solving the UN global goals." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://hackftw.cf/venue/" />
-  <meta property="og:image" content="http://hackftw.cf/images/embed.jpg" />
-  <meta property="og:image:secure_url" content="https://hackftw.cf/images/embed.jpg" />
-  <meta property="og:image:type" content="image/jpeg" />
-  <title>Hack For the World</title>
-  <link rel="stylesheet" href="../style.css">
-  <link rel="preload" href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="preload" href="https://fonts.googleapis.com/css?family=Chakra+Petch:400,700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript>
-    <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Chakra+Petch:400,700&display=swap" rel="stylesheet">
-  </noscript>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <title>Venue — Hack For the World</title>
+  <meta name="description" content="The official site of the HackFTW hackathon for high schoolers held in Naperville, IL, aimed at solving the UN global goals.">
+  <meta name="keywords" content="hackftw,naperville hackathon,chicago hackathon,hackathon,global goals">
+  <meta name="robots" content="index,follow">
+
+  <meta property="og:title" content="HackFTW">
+  <meta property="og:description" content="The official site of the HackFTW hackathon for high schoolers held in Naperville, IL, aimed at solving the UN global goals.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hackforthe.world/venue/">
+  <meta property="og:image" content="https://hackforthe.world/assets/img/brand/og-image.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/icons/favicon-16x16.png">
+  <link rel="shortcut icon" href="../assets/icons/favicon.ico">
+  <link rel="mask-icon" href="../assets/icons/safari-pinned-tab.svg" color="#0065ff">
+  <link rel="manifest" href="../assets/icons/site.webmanifest">
+  <meta name="msapplication-TileColor" content="#0065ff">
+  <meta name="msapplication-config" content="../assets/icons/browserconfig.xml">
+  <meta name="theme-color" content="#010e30">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <noscript><style>.reveal { opacity: 1; transform: none; }</style></noscript>
 </head>
 <body>
 
-<div id="navbar" class="sticky">
-  <a id="contact" onclick="window.open('mailto:nnhs.hackftw@gmail.com', 'mail');event.preventDefault()">Contact</a>
-  <a id="venue" href="/venue/#">Venue</a>
-    <a id = "venue" title = "Donate to support HackFTW" href = "https://hcb.hackclub.com/donations/start/hackftw-2025" target="_blank">Donate</a>
+<a class="skip-link" href="#main">Skip to content</a>
 
-  <div id = "hftw" onclick="window.location.href = '/#'">
-    <img class="dark-logo big" onmouseover="hover(this)" onmouseout="unhover(this)" src="/images/png/hftw-light.png">
-    <picture>
-      <source srcset="images/webp/hftw-small.webp" type="image/webp">
-      <img class = "dark-logo small" title="HackFTW" src="images/png/hftw-light.png">
-    </picture>
-	</div>
-</div>
-
-<div id="map-container-container">
-  <div id="venue-map-container" class="venue-item">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2975.019213115779!2d-88.15798893766875!3d41.7847995791492!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e57cd3ed1a63d%3A0xb924ca1f28ed34aa!2sNaperville%20North%20High%20School!5e0!3m2!1sen!2sus!4v1678828924508!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-  </div>
-</div>
-
-<div id="venue-container">
-  <div class="venue-item">
-    <h class="di-title">Naperville North</h>
-    <p class="di-info">899 N Mill St, Naperville, IL 60563</p>
-    <button id="view-on-maps" onclick="window.location.href = 'https://www.google.com/maps/place/Naperville+North+High+School/@41.7847996,-88.1579889,17z/data=!4m6!3m5!1s0x880e57cd3ed1a63d:0xb924ca1f28ed34aa!8m2!3d41.7847156!4d-88.156562!16zL20vMDVqczg1'">View On Google Maps</button>
-  </div>
-  <img class="venue-item venue-img" src="../images/png/venue-img.png">
-  <img class="venue-item venue-img" src="../images/png/venue-img3.png">
-  <div class="venue-item">
-      <h class="di-title">Parking</h>
-      <p class="di-info">Parking will be located at the venue. Overflow parking will be supplied as needed.</p>
-    </div>
-</div>
-
-<div id="register2">
-  <div id="register2-shade">
-    <h id="what-are-you-waiting-for">What are you waiting for?</h> <!-- What are you waiting for? | Thanks to all participants!-->
-    <a id="eventbrite-widget-modal-trigger" class="register-button-2 open" href="https://docs.google.com/forms/d/e/1FAIpQLSeui465Xn1JsAixLQxH_MnhZ261CD6f8UZ324TjgRR6-yMW9w/viewform" target="_blank">Register for HackFTW »</a> <!-- Register Now » | Registration is closed-->
-
-    <!--
-    <a class="di-logo-container" href="https://www.dealerinspire.com/">
+<header class="site-nav" id="site-nav">
+  <nav class="container site-nav__inner" aria-label="Primary">
+    <a class="site-nav__brand" href="../index.html" aria-label="Hack For the World — home">
       <picture>
-        <source srcset="../images/webp/DI-sponsored.webp" type="image/webp">
-        <img class="di-logo big" src="../images/png/DI-sponsored.png">
-      </picture>
-    </a> 
-    <a class="di-logo-container" href="https://www.dealerinspire.com/">
-      <picture>
-        <source srcset="../images/webp/DI-sponsored-1line.webp" type="image/webp">
-        <img class="di-logo small" src="../images/png/DI-sponsored-1line.png">
+        <source type="image/webp" srcset="../assets/img/brand/hftw-light.webp">
+        <img class="site-nav__logo" src="../assets/img/brand/hftw-light.png" alt="Hack For the World">
       </picture>
     </a>
 
-  -->
+    <ul class="site-nav__links">
+      <li><a class="site-nav__link" href="mailto:mcallaghan@naperville203.org" title="Contact us">Contact</a></li>
+      <li><a class="site-nav__link" href="index.html" aria-current="page" title="Information on the venue">Venue</a></li>
+      <li><a class="site-nav__link" href="https://hcb.hackclub.com/donations/start/hackftw-2025" title="Donate to support HackFTW" target="_blank" rel="noopener">Donate</a></li>
+      <li class="site-nav__cta">
+        <a class="btn btn--primary btn--sm" href="https://docs.google.com/forms/d/e/1FAIpQLSeui465Xn1JsAixLQxH_MnhZ261CD6f8UZ324TjgRR6-yMW9w/viewform" target="_blank" rel="noopener" title="Register for HackFTW">Register</a>
+      </li>
+    </ul>
+  </nav>
+</header>
 
+<main id="main">
 
+  <section class="page-head">
+    <div class="container page-head__inner">
+      <p class="eyebrow eyebrow--light">Where it happens</p>
+      <h1>Venue</h1>
+      <p class="lede">Everything you need to know about getting there and parking.</p>
+    </div>
+  </section>
 
+  <section class="section">
+    <div class="container">
+      <p class="notice">
+        <span class="notice__icon" aria-hidden="true">📍</span>
+        <span><strong>The venue is still TBD.</strong>The date, time, and location have not been finalized yet. The details below are from our last event — we will update this page as soon as everything is confirmed.</span>
+      </p>
 
+      <iframe
+        class="venue-map"
+        title="Map of Naperville North High School"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2975.019213115779!2d-88.15798893766875!3d41.7847995791492!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e57cd3ed1a63d%3A0xb924ca1f28ed34aa!2sNaperville%20North%20High%20School!5e0!3m2!1sen!2sus!4v1678828924508!5m2!1sen!2sus"
+        allowfullscreen
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+      <div class="venue-grid">
+        <div class="venue-card">
+          <h2>Naperville North</h2>
+          <address class="venue-card__address">899 N Mill St, Naperville, IL 60563</address>
+          <a class="btn btn--primary" href="https://www.google.com/maps/place/Naperville+North+High+School/@41.7847996,-88.1579889,17z/data=!4m6!3m5!1s0x880e57cd3ed1a63d:0xb924ca1f28ed34aa!8m2!3d41.7847156!4d-88.156562!16zL20vMDVqczg1" target="_blank" rel="noopener">View On Google Maps <span class="btn__arrow" aria-hidden="true">&rarr;</span></a>
+        </div>
+
+        <div class="venue-card venue-card--media">
+          <picture>
+            <source type="image/webp" srcset="../assets/img/venue/entrance.webp">
+            <img src="../assets/img/venue/entrance.png" alt="The main entrance of Naperville North High School" loading="lazy">
+          </picture>
+        </div>
+
+        <div class="venue-card venue-card--media">
+          <picture>
+            <source type="image/webp" srcset="../assets/img/venue/parking-map.webp">
+            <img src="../assets/img/venue/parking-map.png" alt="Aerial map of Naperville North High School showing the Main Lot, NPAC Lot, and Athletic Lot" loading="lazy">
+          </picture>
+        </div>
+
+        <div class="venue-card">
+          <h2>Parking</h2>
+          <p>Parking will be located at the venue. Overflow parking will be supplied as needed.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="container cta__inner">
+      <h2 class="cta__title">What are you waiting for?</h2>
+      <p class="cta__note">Date, time, and venue are still TBD — grab your spot now and we will fill you in.</p>
+      <a class="btn btn--lime" href="https://docs.google.com/forms/d/e/1FAIpQLSeui465Xn1JsAixLQxH_MnhZ261CD6f8UZ324TjgRR6-yMW9w/viewform" target="_blank" rel="noopener" title="Register for HackFTW">Fill out our registration form <span class="btn__arrow" aria-hidden="true">&rarr;</span></a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container site-footer__inner">
+    <a href="../index.html" aria-label="Hack For the World — home">
+      <picture>
+        <source type="image/webp" srcset="../assets/img/brand/hftw-dark.webp">
+        <img class="site-footer__logo" src="../assets/img/brand/hftw-dark.png" alt="Hack For the World" loading="lazy">
+      </picture>
+    </a>
+
+    <ul class="site-footer__links">
+      <li><a href="mailto:mcallaghan@naperville203.org">mcallaghan@naperville203.org</a></li>
+      <li><a href="index.html">Venue</a></li>
+      <li><a href="https://hcb.hackclub.com/donations/start/hackftw-2025" target="_blank" rel="noopener">Donate</a></li>
+    </ul>
+
+    <p class="site-footer__fine">Organized by high schoolers in Naperville, IL — mainly Naperville North Computer Science Club members.</p>
   </div>
-</div>
+</footer>
 
-<!--
-	<noscript><a href="https://www.eventbrite.com/e/hack-for-the-world-chicago-registration-79974063577" rel="noopener noreferrer" target="_blank"></noscript>
-		<noscript></a>Buy Tickets on Eventbrite</noscript>
-		
-		<script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
-		
-		<script type="text/javascript">
-		var exampleCallback = function() {
-			console.log('Order complete!');
-		};
-		
-		window.EBWidgets.createWidget({
-			widgetType: 'checkout',
-			eventId: '79974063577',
-			modal: true,
-			modalTriggerElementId: 'eventbrite-widget-modal-trigger',
-			onOrderComplete: exampleCallback
-		});
-  </script>
--->
-
-<script src="script.js"></script>
+<script src="../assets/js/main.js" defer></script>
 </body>
 </html>

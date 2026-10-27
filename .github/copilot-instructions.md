@@ -1,110 +1,112 @@
-# HackFTW Site - AI Coding Instructions
+# HackFTW Site — AI Coding Instructions
 
 ## Project Overview
-Static marketing website for "Hack For the World" (HackFTW) - a high school hackathon in Naperville, IL. Pure HTML/CSS/JS with no build system or frameworks. Live at: https://hackforthe.world
 
-## Architecture & Structure
+Static marketing website for "Hack For the World" (HackFTW), a high school
+hackathon in Naperville, IL. Pure HTML/CSS/JS, no build system or frameworks.
+Live at: https://hackforthe.world
 
-**Multi-Page Static Site:**
-- Root: Main landing page ([index.html](index.html), [script.js](script.js), [style.css](style.css))
-- `/venue/`: Venue information subpage (separate HTML/JS files)
-- `/contact/`: Contact page (currently empty/placeholder)
-- Shared CSS: All pages use root [style.css](style.css)
+## Structure
 
-**Asset Organization:**
-- `/fonts/`: Custom fonts (BioSans, BioSansBold)
-- `/icons/`: Favicons and app icons
-- `/images/`: Dual-format images (PNG/WebP) for browser compatibility
-  - Structure: `images/{png,webp}/filename.{png,webp}`
-  - WebP used as progressive enhancement
-
-## Critical Conventions
-
-### Image Handling Pattern
-**WebP Detection with Fallback:** All JavaScript files implement runtime WebP support detection:
-
-```javascript
-function canUseWebP() {
-  var elem = document.createElement('canvas');
-  if (!!(elem.getContext && elem.getContext('2d'))) {
-    return elem.toDataURL('image/webp').indexOf('data:image/webp') == 0;
-  }
-  return false;
-}
-
-var webp = "png";  // Default fallback
-window.onload = () => {
-  if (canUseWebP()) { webp = "webp"; }
-  // Dynamically set background images using detected format
-  document.getElementById("logo-parent").style.backgroundImage = "url('images/" + webp + "/parallax1." + webp + "')";
-}
+```
+index.html              Landing page: hero, about, FAQ, sponsors, CTA, footer
+venue/index.html        Venue page: TBD notice, map, venue/parking cards
+assets/
+  css/style.css         The one stylesheet, shared by every page
+  js/main.js            Progressive enhancement only
+  fonts/                Bio Sans (display font), woff + woff2
+  icons/                Favicons, site.webmanifest, browserconfig.xml
+  img/
+    brand/              hftw-light (dark text), hftw-dark (light text),
+                        og-image.jpg
+    backgrounds/        skyline (hero), network (CTA band)
+    sponsors/           Sponsor logos
+    venue/              entrance, parking-map
+    archive/            Retired assets (old Dealer Inspire venue, lockups,
+                        the UN SDG wheel)
 ```
 
-**Path Adjustments:** Subpages ([venue/script.js](venue/script.js)) use relative paths (`../images/`) while root uses absolute (`/images/`).
+All paths are **relative**, never root-absolute. `index.html` references
+`assets/...`; `venue/index.html` references `../assets/...`; `style.css`
+references `../img/...` and `../fonts/...`. Links between pages are relative
+too (`venue/index.html`, `../index.html`). This keeps the site working when
+opened straight from disk over `file://` — Live Server, VS Code previews, and
+GitHub Pages project sites all behave, whereas a leading `/` resolves to the
+drive root and silently loads nothing.
 
-### HTML Patterns
-- **No quotes for simple attributes:** `<html lang=en>` not `lang="en"`
-- **Picture elements with WebP sources:**
-  ```html
-  <picture>
-    <source srcset="images/webp/file.webp" type="image/webp">
-    <img src="images/png/file.png">
-  </picture>
-  ```
-- **Inline event handlers:** Navigation uses `onclick="window.location.href = '/#'"` and `onclick="window.open('mailto:...', 'mail');event.preventDefault()"`
+## Conventions
 
-### CSS Structure
-- **Custom fonts first:** `@font-face` declarations for BioSans at top of [style.css](style.css)
-- **Grid-based layouts:** Hero section and CTAs use CSS Grid with explicit row/column assignments
-  ```css
-  grid-template: 35% 20% 6% 9% 12% / 11% 78% 11%;
-  grid-row: 2/3; grid-column: 2/3;
-  ```
-- **Responsive with flexbox:** FAQ items use `flex: 47%` for two-column wrapping
-- **Color scheme:** Primary blue `#0065ff`, dark overlay `rgba(1, 14, 48, 0.7)`
+### Images: PNG + WebP pairs, same basename
 
-### Navigation & Links
-- **Sticky navbar:** Fixed position with `.sticky` class
-- **Absolute paths for root-level links:** `/venue/`, `/icons/`, etc.
-- **External registration:** Links to Google Forms for event registration
-- **Donation links:** Via Hack Club Bank (hcb.hackclub.com)
+Every image lives beside its WebP twin in the same folder
+(`sponsors/cisco.png` + `sponsors/cisco.webp`). There is no runtime format
+detection — selection is declarative:
 
-## Component Patterns
+```html
+<picture>
+  <source type="image/webp" srcset="/assets/img/sponsors/cisco.webp">
+  <img src="/assets/img/sponsors/cisco.png" alt="Cisco" loading="lazy">
+</picture>
+```
 
-### Hero Section
-Background image set via JavaScript (WebP detection), dark overlay with grid layout, responsive to viewport height (`vh` units)
+```css
+background-image: url("../img/backgrounds/skyline.png");           /* fallback */
+background-image: image-set(
+    url("../img/backgrounds/skyline.webp") type("image/webp"),
+    url("../img/backgrounds/skyline.png") type("image/png"));
+```
 
-### FAQ Section
-Flexbox grid with `.faq-item` at `flex: 47%`, wraps on mobile. Items use inline HTML (`<strong>`, `<br>`) for formatting.
+**A `<source>` is chosen by MIME type, not by whether the file exists** — only
+add the WebP source once the `.webp` is actually committed, or the image breaks.
+Generate a missing one with Pillow:
 
-### Sponsors Section (Currently Commented Out)
-HTML structure exists in comments for future activation. Uses tiered sponsor categories (Platinum/Gold/Silver) with responsive image grids.
+```sh
+python -c "from PIL import Image; Image.open('x.png').save('x.webp', 'WEBP', quality=88, method=6)"
+```
 
-## Development Workflow
+Flat-colour logos are often smaller as lossless WebP (`lossless=True`); if the
+WebP ends up larger than the PNG, drop it and ship the PNG alone.
 
-**No Build System:** Direct file editing and browser refresh. No transpilation, bundling, or preprocessing.
+### CSS
 
-**Testing:**
-- Open files directly in browser or use simple HTTP server (e.g., `python -m http.server`)
-- Test WebP fallback by disabling WebP in browser DevTools
+- Single stylesheet, numbered section banners, tabs for indentation.
+- Everything derives from the tokens in `:root`: brand colours (`--blue-500`
+  `#0065ff`, `--lime-500` `#4ed613`, `--navy-900` `#010e30`, sampled from the
+  logo), a `clamp()` type scale (`--step--1` … `--step-4`), `--gutter`,
+  `--section-y`, radii, shadows, `--ease`. Change a token, not a literal.
+- Layout is intrinsic: `.container` + `grid-template-columns:
+  repeat(auto-fit, minmax(min(100%, 20rem), 1fr))`. Avoid `vh`/`vw` for type and
+  spacing — the old stylesheet did that and broke on short viewports.
+- BEM-ish names (`.faq-card__q`, `.site-nav__link`). Media queries use `rem`.
+- Every animation must be covered by the `prefers-reduced-motion` block at the
+  bottom of the file.
 
-**Deployment:** 
-- Static file hosting (likely via Vercel/Netlify based on domain)
-- No build step required
+### JavaScript
 
-**Browser Compatibility:**
-- Supports legacy browsers via PNG fallbacks
-- Uses `<picture>` elements and `<noscript>` for progressive enhancement
+`assets/js/main.js` is loaded with `defer` and is **pure progressive
+enhancement**: a navbar shadow on scroll and an IntersectionObserver that adds
+`.is-visible` to `.reveal` elements. The page must read correctly without it —
+that is what the `<noscript>` style block in each `<head>` guarantees. Do not
+move content rendering or image selection into JS.
 
-## File Relationships
-- **Subpages load root CSS:** `<link rel="stylesheet" href="../style.css">` (venue, contact)
-- **Icons configured via:** [browserconfig.xml](browserconfig.xml), [site.webmanifest](icons/site.webmanifest)
-- **Duplicate script logic:** [script.js](script.js) and [venue/script.js](venue/script.js) share WebP detection code with path adjustments
+### Accessibility
+
+Keep the skip link, `alt` text on every image, `aria-current="page"` on the
+active nav link, `aria-label` on the logo links, `title` on the map iframe, and
+the `:focus-visible` outline.
 
 ## Editing Guidelines
 
-1. **Adding images:** Place in both `/images/png/` and `/images/webp/` with matching filenames
-2. **New pages:** Copy [venue/index.html](venue/index.html) structure, adjust paths (add `../` for root assets)
-3. **Styling:** Prefer viewport units (`vh`, `vw`) over fixed pixels for responsive design
-4. **Event info updates:** Modify date/time in [index.html](index.html#L53) `#place-and-date` element
-5. **Sponsor activation:** Uncomment [sponsors section](index.html#L82-L95) and add sponsor image assets
+1. **Event details** live in the hero of `index.html` as `.chip--tbd` chips
+   (date/time, venue) plus `.hero__note`. They currently read **TBD** — the
+   date, time, and venue have not been decided. The CTA band and the venue
+   page's `.notice` repeat that; update all of them together.
+2. **Adding a sponsor:** drop the PNG (and WebP, if smaller) into
+   `assets/img/sponsors/`, then add a `<picture>` to `.sponsors__logos`.
+3. **New page:** copy `venue/index.html`, fix the `../` depth on every asset
+   path, update `<title>`, the `og:` tags, and `aria-current`.
+4. **Retiring an asset:** move it to `assets/img/archive/` rather than deleting.
+
+## Development Workflow
+
+No build step. `python -m http.server 8000` from the repo root, then refresh.
