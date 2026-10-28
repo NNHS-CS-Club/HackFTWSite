@@ -1,141 +1,209 @@
 <!DOCTYPE html>
-<html lang=en>
+<html lang="en">
 <head>
-  <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
-  <link rel="manifest" href="/icons/site.webmanifest">
-  <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#0065ff">
-  <link rel="shortcut icon" href="/icons/favicon.ico">
-  <meta name="msapplication-TileColor" content="#0065ff">
-  <meta name="msapplication-config" content="/icons/browserconfig.xml">
-  <meta name="theme-color" content="#ffffff">
-  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
-  <meta name="description" content="The official site of the HackFTW hackathon for high schoolers held in Naperville, IL, aimed at solving tropical deforestation." />
-  <meta name="keywords" content="hackftw,naperville hackathon,chicago hackathon,hackathon,global goals" />
-  <meta name="robots" content="index,follow" />
-  <meta property="og:title" content="HackFTW" />
-  <meta property="og:description" content="The official site of the HackFTW hackathon for high schoolers held in Naperville, IL, aimed at solving tropical deforestation." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://hackftw.cf" />
-  <meta property="og:image" content="http://hackftw.cf/images/embed.jpg" />
-  <meta property="og:image:secure_url" content="https://hackftw.cf/images/webp/embed.jpg" />
-  <meta property="og:image:type" content="image/jpeg" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>Hack For the World</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="preload" href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="preload" href="https://fonts.googleapis.com/css?family=Chakra+Petch:400,700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript>
-    <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Chakra+Petch:400,700&display=swap" rel="stylesheet">
-  </noscript>
+  <meta name="description" content="The official site of the HackFTW hackathon for high schoolers held in Naperville, IL, aimed at solving tropical deforestation.">
+  <meta name="keywords" content="hackftw,naperville hackathon,chicago hackathon,hackathon,global goals">
+  <meta name="robots" content="index,follow">
+
+  <meta property="og:title" content="HackFTW">
+  <meta property="og:description" content="The official site of the HackFTW hackathon for high schoolers held in Naperville, IL, aimed at solving tropical deforestation.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hackforthe.world">
+  <meta property="og:image" content="https://hackforthe.world/assets/img/brand/og-image.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
+  <link rel="shortcut icon" href="assets/icons/favicon.ico">
+  <link rel="mask-icon" href="assets/icons/safari-pinned-tab.svg" color="#0065ff">
+  <link rel="manifest" href="assets/icons/site.webmanifest">
+  <meta name="msapplication-TileColor" content="#0065ff">
+  <meta name="msapplication-config" content="assets/icons/browserconfig.xml">
+  <meta name="theme-color" content="#010e30">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <noscript><style>.reveal { opacity: 1; transform: none; }</style></noscript>
 </head>
 <body>
 
-<div id = "navbar" class = "sticky">
-  <a id = "contact" title = "Contact us" onclick = "window.open('mailto:mcallaghan@naperville203.org', 'mail');event.preventDefault()">Contact</a>
-  <a id = "venue" title = "Information on the venue" href = "/venue/">Venue</a>
-  <a id = "venue" title = "Donate to support HackFTW" href = "https://hcb.hackclub.com/donations/start/hackftw-2025" target="_blank">Donate</a>
-  <div id = "hftw" onclick="window.location.href = '/#'">
-    <img class="dark-logo big" onmouseover="hover(this)" onmouseout="unhover(this)" src="/images/png/hftw-light.png">
-    <picture>
-      <source srcset="images/webp/hftw-small.webp" type="image/webp">
-      <img class = "dark-logo small" title="HackFTW" src="images/png/hftw-light.png">
-    </picture>
-	</div>
-</div>
+<a class="skip-link" href="#main">Skip to content</a>
 
-<div id = "logo-parent">
-  <div id = "logo-div">
-  <h id = "logo-caption">What can you make in 12 hours <br id = "break">that could change the world?</h>
-  <p id = "place-and-date">8am-8pm CST on February 28, 2026 @ <a id = "dealer-inspire-directions" href = "/venue/">Naperville North High School</a> </p>
-  <a id = "eventbrite-widget-modal-trigger-1" title = "Register for HackFTW" class="register-button open" href="https://docs.google.com/forms/d/e/1FAIpQLSeui465Xn1JsAixLQxH_MnhZ261CD6f8UZ324TjgRR6-yMW9w/viewform" target="_blank">Fill out our registration form!</a> <!-- Register on Devpost » | Registration is closed-->
-  </div>
-</div>
+<header class="site-nav" id="site-nav">
+  <nav class="container site-nav__inner" aria-label="Primary">
+    <a class="site-nav__brand" href="index.html" aria-label="Hack For the World — home">
+      <picture>
+        <source type="image/webp" srcset="assets/img/brand/hftw-light.webp">
+        <img class="site-nav__logo" src="assets/img/brand/hftw-light.png" alt="Hack For the World">
+      </picture>
+    </a>
 
-<div id="description-faq">
-  <p id="promo-paragraph">Hack For the World is a 12-hour hackathon for high-schoolers. Students from across the Chicagoland area will come for the weekend, teaming up (or going solo) to build an app, game, or website. We’ll provide free meals & drinks. In the evening, judges will pick the best projects to demo for everyone and win prizes. You’ll meet people, create amazing new things, & most importantly, have fun.</p>
-  <h id="faq" class="title">Frequently Asked Questions</h>
-    <div class="faq-item" id="item1"><strong>How much does it cost?</strong><br>Nothing! Registration and attendance are 100% free, with meals, drinks, swag, & workshops included.</div>
-    <div class="faq-item" id="item2"><strong>Who can participate?</strong><br>Any current student grades 9–12. If you’re under that age, send an email to us <a id="hereLink" onclick="javascript:window.open('mailto:nnhs.hackftw@gmail.com', 'mail');event.preventDefault()">here.</a></div>
-    <div class="faq-item" id="item3"><strong>Hacking!? Is that safe?</strong><br>Hold up! No, we’re not “hacking” servers or databases. The word is being constructively re-defined as building things—apps, games, websites, etc. At HackFTW, it’s all safe, supervised, & entirely educational.</div>
-    <div class="faq-item" id="item4"><strong>What if I’m new to coding?</strong><br>At HackFTW, complete beginners are not only welcome, but expected! Learn as you go with our intro workshops & mentors.</div>
-    <div class="faq-item" id="item6"><strong>What if I can already code?</strong><br>HackFTW is for you, too! We welcome (and have prizes for) absolute beginners, experts, & everyone in between.</div>
-    <div class="faq-item" id="item7"><strong>Do I need a team?</strong><br>Nope! You’ll have an opportunity to meet fellow hackers and make teams of up to 4; find some new friends, bring yours, or work alone.</div>
-    <div class="faq-item" id="item8"><strong>What should I bring?</strong><br>Plan to bring a student ID, computer (any kind), chargers, and anything else for your hack (e.g. hardware).</div>
-    <div class="faq-item" id="item5"><strong id = "item9-strong1">Who runs this? Is it supervised?</strong><br id = "item9-br"></strong><br>We’re independently-organized by high schoolers in the Naperville area, mainly Naperville North Computer Science Club members. It’s fully supervised by adult mentors & chaperones.</div>
-    <div class="faq-item" id="item9"><strong>What can I make?</strong><br>Think outside of the box! We encourage students to channel their creativity into their projects. You can create anything from a game, talking AI, or an interactive website. Let your imagination be your bottleneck!</div>
-</div>
+    <ul class="site-nav__links">
+      <li><a class="site-nav__link" href="mailto:mcallaghan@naperville203.org" title="Contact us">Contact</a></li>
+      <li><a class="site-nav__link" href="venue/index.html" title="Information on the venue">Venue</a></li>
+      <li><a class="site-nav__link" href="https://hcb.hackclub.com/donations/start/hackftw-2025" title="Donate to support HackFTW" target="_blank" rel="noopener">Donate</a></li>
+      <li class="site-nav__cta">
+        <a class="btn btn--primary btn--sm" href="https://docs.google.com/forms/d/e/1FAIpQLSc34mtgaDaeJLPthKJOBfD3ZuB7npginFDbmhCYCappr_eaug/viewform" target="_blank" rel="noopener" title="Register for HackFTW">Register</a>
+      </li>
+    </ul>
+  </nav>
+</header>
 
-<div id="sponsors-list">
-<!-- <h id="sponsors-title" class="title">Sponsors</h>
-    <p id="platinum" class="sponsors-subtitle">Platinum Sponsors</p>
-    <div id="platinum-sponsors" class="sponsor-group">
-   <a href = "https://www.dealerinspire.com/">
-        <picture>
-          <source srcset="/images/webp/sponsors/dealerinspire-logo.webp" type="image/webp">
-          <img title = "Dealer Inspire" src = "../images/png/sponsors/dealerinspire-logo.png">
-        </picture>
-	    </a>
-      
+<main id="main">
+
+  <section class="hero">
+    <div class="container">
+      <div class="hero__inner">
+        <p class="eyebrow eyebrow--light">A hackathon for high schoolers</p>
+
+        <h1 class="hero__title">What can you make in 12 hours <em>that could change the world?</em></h1>
+
+        <div class="hero__meta">
+          <span class="chip chip--tbd"><span class="chip__dot"></span>Date &amp; time: TBD</span>
+          <span class="chip chip--tbd"><span class="chip__dot"></span>Venue: TBD</span>
+        </div>
+
+        <p class="hero__note">We are still locking in the date, time, and venue. Register now and we will let you know as soon as they are set.</p>
+
+        <div class="hero__actions">
+          <a class="btn btn--lime" href="https://docs.google.com/forms/d/e/1FAIpQLSc34mtgaDaeJLPthKJOBfD3ZuB7npginFDbmhCYCappr_eaug/viewform" target="_blank" rel="noopener" title="Register for HackFTW">Fill out our registration form <span class="btn__arrow" aria-hidden="true">&rarr;</span></a>
+          <a class="btn btn--outline" href="#faq">Read the FAQ</a>
+        </div>
+      </div>
     </div>
-    <p id="gold" class="sponsors-subtitle">Gold Sponsors</p>
-    <div id="gold-sponsors" class="sponsor-group">
-	</div>
- <p id="silver" class="sponsors-subtitle">Silver Sponsors</p>
-    <div id="silver-sponsors" class="sponsor-group">
-      
-    </div> -->
-</div>
+  </section>
 
-<div id="sponsors-bar">
-  <h class="sponsors-bar-title">Made possible by our sponsors<br></h>
-  <div class="sponsors-container">
-    <img class="sponsor-logo" src="/images/png/sponsors/code-ninjas-logo.png" alt="Code Ninjas">
-    <img class="sponsor-logo" src="/images/png/sponsors/cs4il-logo.png" alt="CS4IL">
-    <img class="sponsor-logo" src="/images/png/sponsors/nv-secondary-3.png" alt="National Vision">
-    <img class="sponsor-logo" src="/images/png/sponsors/huskie.png" alt="Huskie">
+  <section class="section" id="about">
+    <div class="container about__grid">
+      <div class="section__head">
+        <p class="eyebrow">What is HackFTW?</p>
+        <h2>Build something in a day.</h2>
+      </div>
+      <p class="about__body reveal">Hack For the World is a 12-hour hackathon for high-schoolers. Students from across the Chicagoland area will come for the weekend, teaming up (or going solo) to build an app, game, or website. We’ll provide free meals &amp; drinks. In the evening, judges will pick the best projects to demo for everyone and win prizes. You’ll meet people, create amazing new things, &amp; most importantly, have fun.</p>
+    </div>
+  </section>
+
+  <section class="section section--tint" id="faq">
+    <div class="container">
+      <div class="section__head">
+        <p class="eyebrow">Good question</p>
+        <h2>Frequently Asked Questions</h2>
+      </div>
+
+      <div class="faq-grid">
+        <article class="faq-card reveal">
+          <h3 class="faq-card__q">How much does it cost?</h3>
+          <p class="faq-card__a">Nothing! Registration and attendance are 100% free, with meals, drinks, swag, &amp; workshops included.</p>
+        </article>
+
+        <article class="faq-card reveal">
+          <h3 class="faq-card__q">Who can participate?</h3>
+          <p class="faq-card__a">Any current student grades 9–12. If you’re under that age, send an email to us <a href="mailto:mcallaghan@naperville203.org">here.</a></p>
+        </article>
+
+        <article class="faq-card reveal">
+          <h3 class="faq-card__q">Hacking!? Is that safe?</h3>
+          <p class="faq-card__a">Hold up! No, we’re not “hacking” servers or databases. The word is being constructively re-defined as building things—apps, games, websites, etc. At HackFTW, it’s all safe, supervised, &amp; entirely educational.</p>
+        </article>
+
+        <article class="faq-card reveal">
+          <h3 class="faq-card__q">What if I’m new to coding?</h3>
+          <p class="faq-card__a">At HackFTW, complete beginners are not only welcome, but expected! Learn as you go with our intro workshops &amp; mentors.</p>
+        </article>
+
+        <article class="faq-card reveal">
+          <h3 class="faq-card__q">What if I can already code?</h3>
+          <p class="faq-card__a">HackFTW is for you, too! We welcome (and have prizes for) absolute beginners, experts, &amp; everyone in between.</p>
+        </article>
+
+        <article class="faq-card reveal">
+          <h3 class="faq-card__q">Do I need a team?</h3>
+          <p class="faq-card__a">Nope! You’ll have an opportunity to meet fellow hackers and make teams of up to 4; find some new friends, bring yours, or work alone.</p>
+        </article>
+
+        <article class="faq-card reveal">
+          <h3 class="faq-card__q">What should I bring?</h3>
+          <p class="faq-card__a">Plan to bring a student ID, computer (any kind), chargers, and anything else for your hack (e.g. hardware).</p>
+        </article>
+
+        <article class="faq-card reveal">
+          <h3 class="faq-card__q">Who runs this? Is it supervised?</h3>
+          <p class="faq-card__a">We’re independently-organized by high schoolers in the Naperville area, mainly Naperville North Computer Science Club members. It’s fully supervised by adult mentors &amp; chaperones.</p>
+        </article>
+
+        <article class="faq-card reveal">
+          <h3 class="faq-card__q">What can I make?</h3>
+          <p class="faq-card__a">Think outside of the box! We encourage students to channel their creativity into their projects. You can create anything from a game, an app, or an interactive website. Let your imagination be your bottleneck!</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="sponsors">
+    <div class="container">
+      <div class="section__head sponsors__head">
+        <p class="eyebrow">Thank you</p>
+        <h2>Made possible by our sponsors</h2>
+      </div>
+
+      <div class="sponsors__logos">
+        <picture>
+          <source type="image/webp" srcset="assets/img/sponsors/code-ninjas.webp">
+          <img class="sponsors__logo" src="assets/img/sponsors/code-ninjas.png" alt="Code Ninjas" loading="lazy">
+        </picture>
+        <picture>
+          <source type="image/webp" srcset="assets/img/sponsors/cs4il.webp">
+          <img class="sponsors__logo" src="assets/img/sponsors/cs4il.png" alt="CS4IL" loading="lazy">
+        </picture>
+        <picture>
+          <source type="image/webp" srcset="assets/img/sponsors/nvisia-horizontal.webp">
+          <img class="sponsors__logo" src="assets/img/sponsors/nvisia-horizontal.png" alt="NVISIA" loading="lazy">
+        </picture>
+        <picture>
+          <source type="image/webp" srcset="assets/img/sponsors/huskie.webp">
+          <img class="sponsors__logo" src="assets/img/sponsors/huskie.png" alt="Huskie" loading="lazy">
+        </picture>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="container cta__inner">
+      <h2 class="cta__title">What are you waiting for?</h2>
+      <p class="cta__note">Date, time, and venue are still TBD — grab your spot now and we will fill you in.</p>
+      <a class="btn btn--lime" href="https://docs.google.com/forms/d/e/1FAIpQLSc34mtgaDaeJLPthKJOBfD3ZuB7npginFDbmhCYCappr_eaug/viewform" target="_blank" rel="noopener" title="Register for HackFTW">Fill out our registration form <span class="btn__arrow" aria-hidden="true">&rarr;</span></a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container site-footer__inner">
+    <a href="index.html" aria-label="Hack For the World — home">
+      <picture>
+        <source type="image/webp" srcset="assets/img/brand/hftw-dark.webp">
+        <img class="site-footer__logo" src="assets/img/brand/hftw-dark.png" alt="Hack For the World" loading="lazy">
+      </picture>
+    </a>
+
+    <ul class="site-footer__links">
+      <li><a href="mailto:mcallaghan@naperville203.org">Contact</a></li>
+      <li><a href="venue/index.html">Venue</a></li>
+      <li><a href="https://hcb.hackclub.com/donations/start/hackftw-2025" target="_blank" rel="noopener">Donate</a></li>
+    </ul>
+
+    <p class="site-footer__fine">Organized by high schoolers in Naperville, IL — mainly Naperville North Computer Science Club members.</p>
   </div>
-</div>
+</footer>
 
-<div id="register2">
-  <div id="register2-shade">
-    <h id="what-are-you-waiting-for">What are you waiting for?</h> <!-- What are you waiting for? | Thanks to all participants!-->
-    <a id="eventbrite-widget-modal-trigger-2" title = "Register for HackFTW" class="register-button-2 open" href="https://docs.google.com/forms/d/e/1FAIpQLSeui465Xn1JsAixLQxH_MnhZ261CD6f8UZ324TjgRR6-yMW9w/viewform" target="_blank">Fill out our registration form!</a> <!-- Register on Devpost » | Registration is closed-->
-  </div>
-</div>
-
-
-
-<!-- Noscript content for added SEO -->
-<noscript><a href="https://www.eventbrite.com/e/hack-for-the-world-chicago-registration-79974063577" rel="noopener noreferrer" target="_blank"></noscript>
-<!-- You can customize this button any way you like -->
-<noscript></a>Buy Tickets on Eventbrite</noscript>
-		
-<!-- <script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
-
-<script type = "text/javascript">
-var exampleCallback = function() {
-    console.log('Order complete!');
-};
-
-window.EBWidgets.createWidget({
-    widgetType: 'checkout',
-    eventId: '79974063577',
-    modal: true,
-    modalTriggerElementId: 'eventbrite-widget-modal-trigger-1',
-    onOrderComplete: exampleCallback
-});
-
-window.EBWidgets.createWidget({
-    widgetType: 'checkout',
-    eventId: '79974063577',
-    modal: true,
-    modalTriggerElementId: 'eventbrite-widget-modal-trigger-2',
-    onOrderComplete: exampleCallback
-});
-</script> -->
-
-<script src="script.js"></script>
+<script src="assets/js/main.js" defer></script>
 </body>
 </html>
